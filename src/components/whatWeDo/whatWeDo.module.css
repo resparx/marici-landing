@@ -1,0 +1,54 @@
+.container {
+  width: 100vw;
+  padding: 0 12rem;
+  display: flex;
+  gap: 40px;
+}
+
+.imageWrapper {
+  width: 35%;
+}
+
+.image {
+  width: 100%;
+  animation: zoom-in-zoom-out 7s ease infinite;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.heading {
+  font-size: 38px;
+  font-weight: 600;
+  color: #febd00;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.subHeading {
+  color: #404040;
+  font-size: 18px;
+  font-weight: 300;
+  width: 80%;
+}
+
+.itemsWrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

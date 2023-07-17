@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12rem;
+    width: 100vw;
+    height: 220vh;
+}
+
+.head {
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 2;
+    margin-top: 10%;
+}
+
+.headContent {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.title {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    color: #082D72; 
+}
+
+.subTitle {
+    color: #000;
+font-size: 20px;
+font-style: normal;
+font-weight: 400; 
+}
+
+.bgImage {
+    background-color: white;
+    background-image: url("https://i.imgur.com/tjmABdQ.jpg");
+    background-size: 80%;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 170vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carouselContainer {
+    width: 100vw;
+    position: relative;
+    left: -12rem;
+    padding: 12rem 0 0 10rem;
+}
+

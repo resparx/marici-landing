@@ -1,0 +1,22 @@
+
+
+.container {
+    display: flex;
+    width: 100vw;
+    padding: 2rem 12rem;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 4;
+}
+
+.navItems {
+    display: flex;
+    gap: 60px;
+}
+
+.navItem {
+    color: #444444;
+    cursor: pointer;
+}

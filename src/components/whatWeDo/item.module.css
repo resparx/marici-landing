@@ -1,0 +1,54 @@
+.container {
+    transition: all ease 500ms;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.heading {
+    color: #6d6d6d;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all ease 500ms;
+}
+
+.container:hover .heading {
+    color: #333138;
+}
+
+.content {
+    color: #323232;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.button {
+    display: none;
+    transition: all ease 500ms;
+    cursor: pointer;
+    color: rgb(26, 26, 128);
+}
+
+.container:hover  .button {
+    display: block;
+}
+
+.iconBg {
+    border-radius: 50%;
+    background-color: #333138;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+
+

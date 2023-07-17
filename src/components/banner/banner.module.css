@@ -1,0 +1,56 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 12rem;
+    display: flex;
+    align-items: center;
+}
+
+.blob {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 650px;
+    height: 1180px
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bannerHeading {
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 600;
+    color: #515151;
+    width: 80%;
+}
+
+.subHeading {
+    font-size: 22px;
+    font-weight: 600;
+    color: #393939;
+    width: 80%;
+}
+
+.button {
+    border-radius: 8px;
+  border: 2px solid #4156C0;
+  background: #FFF; 
+  color: #4156C0;
+  width: 150px;
+  height: 52px;
+  font-size: 18px;
+    font-weight: 400;
+}
+
+.imgContainer {
+    width: 70%;
+    height: 60vh;
+}
+
+.bannerImage {
+    width: 100%;
+}
