@@ -1,7 +1,7 @@
 import styles from "./ambition.module.css";
 import StarFill from "@/icons/StarFill";
 
-const Item = ({ heading, content }) => {
+const Item = ({ heading, content }: any) => {
   return (
     <div className={styles.item}>
       <p className={styles.itemHeading}>{heading}</p>

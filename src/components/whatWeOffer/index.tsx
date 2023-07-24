@@ -5,7 +5,7 @@ const WhatWeOffer = () => {
     <div className={styles.container}>
       <div className={styles.headingWrapper}>
         <p className={`${styles.heading} ${styles.headColorBlue}`}>
-          Let's make you to
+          Lets make you to
         </p>
         <p className={`${styles.heading} ${styles.headColorBlack}`}>
           Get the most from SAP

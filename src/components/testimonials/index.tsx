@@ -5,8 +5,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Item from "./item";
 const Testimonial = () => {
-  const containerRef = useRef();
-  const containerRefReverse = useRef();
+  const containerRef = useRef<any>(null);
+  const containerRefReverse = useRef<any>(null);
   gsap.registerPlugin(ScrollTrigger);
 
   const sections = gsap.utils.toArray(".panel");

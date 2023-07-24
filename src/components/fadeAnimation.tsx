@@ -7,7 +7,7 @@ const FadeInAnimation = ({
   direction = '',
   delay = 0,
   ...props
-}) => {
+}: any) => {
   let compRef = useRef(null);
   const distance = 200;
   let fadeDirection : any;

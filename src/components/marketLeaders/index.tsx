@@ -6,7 +6,7 @@ const MarketLeaders = () => {
         Trusted by the market leaders
         </p>
         <div>
-            <
+            
         </div>
     </div>
 }

@@ -1,8 +1,8 @@
 import React from "react";
 
-function useInterval(callback: () => void, delay: number) {
-    const intervalRef = React.useRef(null);
-    const savedCallback = React.useRef(callback);
+function useInterval(callback: () => void, delay: any) {
+    const intervalRef = React.useRef<any>();
+    const savedCallback = React.useRef<any>(callback);
     React.useEffect(() => {
       savedCallback.current = callback;
     }, [callback]);
