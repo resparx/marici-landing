@@ -1,20 +1,45 @@
-import { Content } from "next/font/google";
+'use client'
+
+import classNames from "classnames/bind";
 import styles from "./navbar.module.css";
+import { useEffect, useState } from "react";
 const Navbar = () => {
+  const [colorChange, setColorChange] = useState(false);
+  const bindStyles = classNames.bind(styles);
+  
+
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (window.scrollY >= 80) {
+        setColorChange(true);
+      } else {
+        setColorChange(false);
+      }
+    };
+    window.addEventListener("scroll", changeNavbarColor);
+  }, []);
+
+  const containerStyes = bindStyles("container", {
+    containerActive: colorChange,
+  });
+
+  const navStyles = bindStyles("navItem", {
+    navItemActive: colorChange
+  })
   return (
-    <div className={styles.container}>
+    <div className={containerStyes}>
       <div>
         <img src="/static/images/logo.png" />
       </div>
       <div className={styles.navItems}>
-        <p className={styles.navItem}>Home</p>
-        <p className={styles.navItem}>Solutions</p>
-        <p className={styles.navItem}>Services</p>
-        <p className={styles.navItem}>Industries</p>
-        <p className={styles.navItem}>Careers</p>
-        <p className={styles.navItem}>About us</p>
-        <p className={styles.navItem}>Contact</p>
-        <p className={styles.navItem}>Impressum</p>
+        <p className={navStyles}>Home</p>
+        <p className={navStyles}>Solutions</p>
+        <p className={navStyles}>Services</p>
+        <p className={navStyles}>Industries</p>
+        <p className={navStyles}>Careers</p>
+        <p className={navStyles}>About us</p>
+        <p className={navStyles}>Contact</p>
+        <p className={navStyles}>Impressum</p>
       </div>
     </div>
   );

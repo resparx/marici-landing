@@ -7,8 +7,13 @@
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
     z-index: 4;
+    background-color: transparent;
+}
+
+.containerActive {
+    background-color: white;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
 }
 
 .navItems {
@@ -17,6 +22,10 @@
 }
 
 .navItem {
-    color: #444444;
+    color: #FFFFFF;
     cursor: pointer;
+}
+
+.navItemActive {
+    color: #444444;
 }

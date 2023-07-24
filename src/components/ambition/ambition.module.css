@@ -1,55 +1,122 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 0 12rem;
+    padding: 10rem 12rem;
     width: 100vw;
-    height: 220vh;
+    background-color: rgb(230, 230, 255);
 }
 
-.head {
+.cardContainer {
     display: flex;
-    flex-direction: row-reverse;
-    z-index: 2;
-    margin-top: 10%;
+    justify-content: space-around;
 }
 
-.headContent {
+.card {
+    width: 32%;
+    height: 640px;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    width: 40%;
-}
-
-.title {
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 600;
-    color: #082D72; 
-}
-
-.subTitle {
-    color: #000;
-font-size: 20px;
-font-style: normal;
-font-weight: 400; 
+    position: relative;
 }
 
 .bgImage {
-    background-color: white;
-    background-image: url("https://i.imgur.com/tjmABdQ.jpg");
-    background-size: 80%;
-    background-position: left;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 170vh;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    right: 0;
+    height: 100px;
 }
 
-.carouselContainer {
-    width: 100vw;
-    position: relative;
-    left: -12rem;
-    padding: 12rem 0 0 10rem;
+.cardBGYello {
+    background-color: #FBD06D;
+}
+
+.cardBGBlue {
+    background-color: #141D44;
+}
+
+.cardHeading {
+    font-size: 20px;
+    margin-bottom: 8rem;
+}
+
+.colorGrey {
+    color: #515151
+}
+
+.colorWhite {
+    color: #FFFFFF
+}
+
+.contentFontSize {
+    font-size: 30px;
+}
+
+.fontBold {
+    font-weight: 600;
+}
+
+.heading {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.headColorBlack {
+    color: black;
+}
+
+.headColorBlue {
+    color: #2E45A5;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+.subHeading {
+    font-size: 20px;
+    width: 50%
+}
+
+.mtAuto {
+    margin-top: auto;
+}
+
+.iconBg {
+    width: 40px;
+border-radius: 50%;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: auto;
+}
+
+.transWhiteBG {
+    background-color: #ffffff36;
+}
+
+.transGreyBG {
+    background-color: #51515136;
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.itemHeading {
+    font-size: 54px;
+    font-weight: 700;
+    color: #141D44
+}
+
+.itemContent{
+    font-size: 24px;
+    font-weight: 600;
+    color: #141D44
 }
 

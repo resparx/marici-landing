@@ -5,19 +5,21 @@ import Navbar from '@/components/navbar'
 import Banner from '@/components/banner'
 import Ambition from '@/components/ambition'
 import WhatWeOffer from '@/components/whatWeOffer'
-import Testimonial from '@/components/testimonial'
 import WhatWeDo from '@/components/whatWeDo'
-import Endeavour from '@/components/endeavour'
+import Testimonial from '@/components/testimonials'
+import PreBanner from '@/components/preBanner'
+import Partners from '@/components/partners'
 
 export default function Home() {
   return (
     <main className={styles.main}>
      <Navbar /> 
+     <PreBanner/>
      <Banner />
      <WhatWeDo />
-     {/* <Ambition/>
-     <WhatWeOffer/> */}
-     <Endeavour />
+     <Ambition/>
+     <Partners/>
+     <WhatWeOffer/>
      <Testimonial />
     </main>
   )

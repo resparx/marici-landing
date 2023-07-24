@@ -1,125 +1,36 @@
 .container {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.row {
-    flex-direction: row;
-}
-
-.row-reverse {
-    flex-direction: row-reverse;
+  display: flex;
+  width: 30%;
 }
 
 .contentWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 35%
-}
-
-.imageWrapper {
-    width: 35%;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.image {
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
 }
 
 .heading {
-    color: #000;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: 32px; 
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
 }
 
 .content {
-    color: #000;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 14px; 
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.textRight { 
-text-align: right;
+.iconWrapper {
+  background-color: #2E45A5;
+  border-radius: 12px;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center ;
 }
 
-.metricValue {
-    color: #082D72;
-font-size: 34px;
-font-style: normal;
-font-weight: 500;
-line-height: 34px; 
-}
 
-.metricLabel {
-    color: #082D72;
-font-size: 19px;
-font-style: normal;
-font-weight: 500;
-line-height: 19px; 
-}
-
-.metricItemsWrapper {
-    display: flex;
-    gap: 60px;
-}
-
-.metricWrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.button {
-    border-radius: 8px;
-border: 2px solid #4156C0;
-background: #FFF; 
-color: #4156C0;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 22px; 
-width: 120px;
-height: 52px; 
-}
-
-.subItemsWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 44px;
-}
-
-.subItemWrapper {
-    display: flex;
-    gap: 20px;
-}
-
-.subContentWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.miniHeading {
-    color: #000;
-text-align: right;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px; 
-}
-
-.miniContent {
-    color: #000;
-text-align: right;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 14px; 
-}
