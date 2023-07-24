@@ -96,10 +96,8 @@ const Banner = () => {
   const [generatedArr, setGeneratedArr] = useState<any>([]);
 
   const generateRandom = (maxNr: number): number => {
-    console.log(generatedArr, "generatedArr");
     let random = Number((Math.random() * maxNr).toFixed());
     random = Number(random);
-    console.log(random, "rand");
     if (!generatedArr.includes(random)) {
       generatedArr.push(random);
       setGeneratedArr(generatedArr);
