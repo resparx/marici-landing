@@ -56,23 +56,23 @@ const data = [
       className: 'bgEcommerce'
     }
   },
-  {
-    heading: "Heading for Network and sourcing",
-    subHeading:
-      "Lorem ipsum dolor sit amet consectetur. Etiam proin tristique ultricies sit varius a massa ac. Viverra get sit euismod lorem. Diam pellentesque id eros vel.",
-    buttonText: "Learn More",
-    buttonProps: {
-      colorTheme: "#4E1F82",
-    },
-    blobProps: {
-      bg: "#DBBBFF",
-    },
-    imageSrc: "https://i.imgur.com/txULSNo.png",
-    imgAlt: "netWork",
-    bgProps: {
-      className: 'bgNAS'
-    }
-  },
+  // {
+  //   heading: "Heading for Network and sourcing",
+  //   subHeading:
+  //     "Lorem ipsum dolor sit amet consectetur. Etiam proin tristique ultricies sit varius a massa ac. Viverra get sit euismod lorem. Diam pellentesque id eros vel.",
+  //   buttonText: "Learn More",
+  //   buttonProps: {
+  //     colorTheme: "#4E1F82",
+  //   },
+  //   blobProps: {
+  //     bg: "#DBBBFF",
+  //   },
+  //   imageSrc: "https://i.imgur.com/txULSNo.png",
+  //   imgAlt: "netWork",
+  //   bgProps: {
+  //     className: 'bgNAS'
+  //   }
+  // },
   {
     heading: "Heading for Full scale projects",
     subHeading:
@@ -118,13 +118,13 @@ const Layout = ({assets}: any) => {
       <div className={styles.imgContainer}>
       <img
             className={styles.bannerImage}
-            src={assets.imageSrc}
-            alt={assets.imgAlt}
+            src={assets?.imageSrc}
+            alt={assets?.imgAlt}
           />
       </div>
       <div className={styles.content}>
-        <h1 className={styles.bannerHeading}>{assets.heading}</h1>
-        <p className={styles.subHeading}>{assets.subHeading}</p>
+        <h1 className={styles.bannerHeading}>{assets?.heading}</h1>
+        <p className={styles.subHeading}>{assets?.subHeading}</p>
         <button className={styles.button}>Know more</button>
       </div>
       
@@ -138,7 +138,7 @@ const Banner = () => {
     <Layout assets={data[1]} />
     <Layout assets={data[2]} />
     <Layout assets={data[3]} />
-    {/* <Layout assets={data[4]} /> */}
+    <Layout assets={data[4]} />
     <Layout assets={data[5]} />
   </div>
 }
