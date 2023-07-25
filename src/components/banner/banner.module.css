@@ -4,6 +4,7 @@
     padding: 0 12rem;
     display: flex;
     align-items: center;
+    gap: 10rem;
 }
 
 .blob {
@@ -18,6 +19,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 50%;
 }
 
 .bannerHeading {
@@ -53,4 +55,28 @@
 
 .bannerImage {
     width: 100%;
+}
+
+.bgPOS{
+    background-color: #97FFB3;
+}
+
+.bgAnalytics {
+    background-color: #FF707C;
+}
+
+.bgEcommerce {
+    background-color: #FFDC7A;
+}
+
+.bgFSP {
+    background-color: #B675FF;
+}
+
+.bgNAS {
+    background-color: #DBBBFF;
+}
+
+.bgIE {
+    background-color: #6881FF;
 }

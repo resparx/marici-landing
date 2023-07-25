@@ -11,9 +11,8 @@ const PreBanner = () => {
   }) 
 
   useEffect(()=>{
-  const width = wrapperRef?.current?.clientWidth || 0
+  const width = (wrapperRef?.current?.clientWidth || 0)*.5
   const height = (width*9)/16
-  console.log(width,height)
     setDimensions({
       width,
       height
@@ -22,16 +21,6 @@ const PreBanner = () => {
   
   return (
     <div ref={wrapperRef} className={styles.videoWrapper}>
-      <ReactPlayer
-        className="react-player fixed-bottom"
-        url="static/videos/preBanner_animated.mp4"
-        playing
-        muted
-        autoPlay
-        loop
-        width={dimensions.width}
-        height={dimensions.height}
-      />
       <div className={styles.contentWrapper}>
         <h1 className={styles.heading}>
           The banner text comes here, a catchy content which sets the context to user about us
@@ -43,6 +32,16 @@ const PreBanner = () => {
           Know more
         </button>
       </div>
+      <ReactPlayer
+        className={`${styles.video} react-player`}
+        url="static/videos/preBanner_animated.mp4"
+        playing
+        muted
+        autoPlay
+        loop
+        width={dimensions.width}
+        height={dimensions.height}
+      />
     </div>
   );
 };

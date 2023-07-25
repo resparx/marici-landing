@@ -22,8 +22,13 @@
 }
 
 .navItem {
-    color: #FFFFFF;
+    color: #444444;
     cursor: pointer;
+}
+
+.navItem:hover {
+    color: #2E45A5;
+    font-weight: 600;
 }
 
 .navItemActive {

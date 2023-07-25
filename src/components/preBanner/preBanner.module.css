@@ -1,34 +1,35 @@
 .videoWrapper {
     width: 100vw;
     height: 100vh;
-    position: relative;
+    display: flex;
     overflow: hidden;
+}
+
+.video {
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
 }
 
 .contentWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
     z-index: 3;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    backdrop-filter: blur(5px);
-    padding: 0 12rem;
+    padding: 0 0 0 12rem;
 }
 
 .heading {
-    color: white;
-    width: 64%;
+    color: #2E45A5;
     font-size: 42px;
     margin-bottom: 30px;
 }
 
 .subContent {
     font-size: 20px;
+    color: #515151;
     width: 50%;
     margin-bottom: 30px;
 }
@@ -37,8 +38,10 @@
     height: 52px;
     width: max-content;
     padding: 0 30px;
-    background-color: #387ec1;
+    background-color: #2e45a5;
     outline: none;
     border:none;
     border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
 }
