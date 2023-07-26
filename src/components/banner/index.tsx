@@ -3,7 +3,7 @@
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./banner.module.css";
 import { gsap } from "gsap";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const data = [
   {
@@ -130,8 +130,6 @@ const Layout = ({assets}: any) => {
 
 const Banner = () => {
   const [panels, setPanels] = useState<any>([])
-  const panelWrapperRef = useRef()
-  
 
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger)
@@ -157,7 +155,7 @@ const Banner = () => {
 
   
   return (
-    <div ref={panelWrapperRef} className={`${styles.bannerContainer} panelContainer`}>
+    <div className={`${styles.bannerContainer} panelContainer`}>
     <Layout assets={data[0]} />
     <Layout assets={data[1]} />
     <Layout assets={data[2]} />
