@@ -1,11 +1,4 @@
-.container {
-    width: 100vw;
-    height: 100vh;
-    padding: 0 12rem;
-    display: flex;
-    align-items: center;
-    gap: 10rem;
-}
+
 
 .blob {
     position: absolute;
@@ -61,6 +54,10 @@
     background-color: #97FFB3;
 }
 
+.bgFSP {
+    background-color: #B675FF;
+}
+
 .bgAnalytics {
     background-color: #FF707C;
 }
@@ -69,9 +66,7 @@
     background-color: #FFDC7A;
 }
 
-.bgFSP {
-    background-color: #B675FF;
-}
+
 
 .bgNAS {
     background-color: #DBBBFF;
@@ -79,4 +74,20 @@
 
 .bgIE {
     background-color: #6881FF;
+}
+
+.bannerContainer {
+    width: 600%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    overscroll-behavior: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
 }

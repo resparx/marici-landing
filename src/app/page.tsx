@@ -12,15 +12,15 @@ import Partners from '@/components/partners'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-     <Navbar /> 
+    <div className={styles.pageContainer}>
+      <Navbar /> 
      <PreBanner/>
      <Banner />
      <WhatWeDo />
      <Ambition/>
-     <Partners/>
+     {/* <Partners/>
      <WhatWeOffer/>
-     <Testimonial />
-    </main>
+     <Testimonial /> */}
+    </div>
   )
 }

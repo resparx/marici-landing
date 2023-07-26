@@ -1,8 +1,9 @@
 "use client";
-import { useState } from "react";
-import { CSSTransition} from "react-transition-group";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./banner.module.css";
-import "@/css/bannerTransition.css";
+import { gsap } from "gsap";
+import { useEffect, useRef, useState } from "react";
 
 const data = [
   {
@@ -20,6 +21,23 @@ const data = [
     imgAlt: "pos",
     bgProps: {
       className: 'bgPOS'
+    }
+  },
+  {
+    heading: "Heading for Full scale projects",
+    subHeading:
+      "Lorem ipsum dolor sit amet consectetur. Etiam proin tristique ultricies sit varius a massa ac. Viverra get sit euismod lorem. Diam pellentesque id eros vel.",
+    buttonText: "Learn More",
+    buttonProps: {
+      colorTheme: "#4E1F82",
+    },
+    blobProps: {
+      bg: "#DBBBFF",
+    },
+    imageSrc: "https://i.imgur.com/QE0AJsb.png",
+    imgAlt: "Proj",
+    bgProps: {
+      className: 'bgFSP'
     }
   },
   {
@@ -74,23 +92,6 @@ const data = [
   //   }
   // },
   {
-    heading: "Heading for Full scale projects",
-    subHeading:
-      "Lorem ipsum dolor sit amet consectetur. Etiam proin tristique ultricies sit varius a massa ac. Viverra get sit euismod lorem. Diam pellentesque id eros vel.",
-    buttonText: "Learn More",
-    buttonProps: {
-      colorTheme: "#4E1F82",
-    },
-    blobProps: {
-      bg: "#DBBBFF",
-    },
-    imageSrc: "https://i.imgur.com/QE0AJsb.png",
-    imgAlt: "Proj",
-    bgProps: {
-      className: 'bgFSP'
-    }
-  },
-  {
     heading: "Heading for Intelligent enterprise",
     subHeading:
       "Lorem ipsum dolor sit amet consectetur. Etiam proin tristique ultricies sit varius a massa ac. Viverra get sit euismod lorem. Diam pellentesque id eros vel.",
@@ -109,12 +110,8 @@ const data = [
   },
 ];
 const Layout = ({assets}: any) => {
-
-
-
-
   return (
-    <div className={`${styles.container} ${styles[assets?.bgProps?.className]}`}>
+    <section className={`${styles.container} ${styles[assets?.bgProps?.className]} panel`}>
       <div className={styles.imgContainer}>
       <img
             className={styles.bannerImage}
@@ -127,20 +124,47 @@ const Layout = ({assets}: any) => {
         <p className={styles.subHeading}>{assets?.subHeading}</p>
         <button className={styles.button}>Know more</button>
       </div>
-      
-    </div>
+    </section>
   );
 };
 
 const Banner = () => {
-  return <div>
+  const [panels, setPanels] = useState<any>([])
+  const panelWrapperRef = useRef()
+  
+
+  useEffect(()=>{
+    gsap.registerPlugin(ScrollTrigger)
+    const panelArr = gsap.utils.toArray(".panel")
+    setPanels(panelArr)
+   
+  },[])
+
+  gsap.to(panels,{
+    xPercent: -100 * (panels.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".panelContainer",
+      pin: true,
+      scrub: 1,
+      snap: 1/ (panels.length - 1),
+      end: () => "+=3500",
+      anticipatePin: 1
+    }
+  })
+
+  
+
+  
+  return (
+    <div ref={panelWrapperRef} className={`${styles.bannerContainer} panelContainer`}>
     <Layout assets={data[0]} />
     <Layout assets={data[1]} />
     <Layout assets={data[2]} />
     <Layout assets={data[3]} />
     <Layout assets={data[4]} />
-    <Layout assets={data[5]} />
   </div>
+  )
 }
 
 export default Banner;
