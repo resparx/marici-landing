@@ -3,7 +3,7 @@ import styles from "./item.module.css";
 
 const Item = ({ company, content, name }: any) => {
   return (
-    <div className={`${styles.container} panel`}>
+    <div className={`${styles.container}`}>
       <p className={styles.content}>{content}</p>
       <div>
         <img />

@@ -18,9 +18,9 @@ export default function Home() {
      <Banner />
      <WhatWeDo />
      <Ambition/>
-     {/* <Partners/>
+     <Partners/>
      <WhatWeOffer/>
-     <Testimonial /> */}
+     <Testimonial />
     </div>
   )
 }

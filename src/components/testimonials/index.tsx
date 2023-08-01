@@ -1,8 +1,7 @@
 "use client";
-import { useRef } from "react";
+
 import styles from "./testimonial.module.css";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+
 import Item from "./item";
 const Testimonial = () => {
   // const containerRef = useRef<any>(null);

@@ -110,6 +110,10 @@ const data = [
   },
 ];
 const Layout = ({assets}: any) => {
+  useEffect(()=>{
+
+  },[])
+  const tl = gsap.timeline({repeat: -1});
   return (
     <section className={`${styles.container} ${styles[assets?.bgProps?.className]} panel`}>
       <div className={styles.imgContainer}>
@@ -135,7 +139,6 @@ const Banner = () => {
     gsap.registerPlugin(ScrollTrigger)
     const panelArr = gsap.utils.toArray(".panel")
     setPanels(panelArr)
-   
   },[])
 
   gsap.to(panels,{

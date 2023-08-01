@@ -6,7 +6,6 @@
     margin: 3rem 0;
     background-position: bottom;
     position: relative;
-
 }
 
 .blur {
@@ -50,8 +49,6 @@
 .panelWrapper {
     display: flex;
     gap: 20px;
-    width: calc(100vw - 12rem);
-    overflow: hidden;
 }
 
 .panelWrapperReverse {

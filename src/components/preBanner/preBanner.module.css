@@ -5,6 +5,11 @@
     overflow: hidden;
 }
 
+.bgImage {
+    position: absolute;
+    left: 0;
+}
+
 .video {
     height: 100vh !important;
     display: flex;
@@ -28,9 +33,9 @@
 }
 
 .subContent {
-    font-size: 20px;
+    font-size: 18px;
     color: #515151;
-    width: 50%;
+    width: 100%;
     margin-bottom: 30px;
 }
 
