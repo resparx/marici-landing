@@ -50,10 +50,10 @@ const Testimonial = () => {
       <div className={styles.blur}></div>
       <div className={styles.headWrapper}>
         <p className={`${styles.headColorBlue} ${styles.heading}`}>
-          Happy customers
+        Building our Expertise
         </p>
         <p className={`${styles.headColorGrey} ${styles.heading}`}>
-          are our true Wealth
+        For you
         </p>
       </div>
       <div className={styles.scrollWrapper}>

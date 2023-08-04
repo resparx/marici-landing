@@ -3,6 +3,7 @@
   height: 100vh;
   padding: 0 12rem;
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 
@@ -18,14 +19,14 @@
 .contentWrapper {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 68%;
 }
 
 .heading {
   font-size: 38px;
   font-weight: 600;
   color: #febd00;
-  width: 50%;
+  width: 70%;
   margin-bottom: 20px;
 }
 
@@ -33,13 +34,21 @@
   color: #404040;
   font-size: 18px;
   font-weight: 300;
-  width: 80%;
+  width: 100%;
 }
 
 .itemsWrapper {
     display: flex;
     gap: 20px;
     margin-top: 40px;
+}
+
+.button {
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 16px;
+  margin-top: 40px;
+  border: none;
 }
 
 @keyframes zoom-in-zoom-out {

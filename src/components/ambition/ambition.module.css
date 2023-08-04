@@ -1,122 +1,130 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    padding: 10rem 12rem;
-    width: 100vw;
-    background-color: rgb(230, 230, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 12rem;
+  width: 100vw;
+  background-color: rgb(230, 230, 255);
 }
 
 .cardContainer {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .card {
-    width: 32%;
-    height: 640px;
-    border-radius: 12px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  width: 32%;
+  height: 640px;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .bgImage {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    height: 100px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  height: 100px;
 }
 
 .cardBGYello {
-    background-color: #FBD06D;
+  background-color: #fbd06d;
 }
 
 .cardBGBlue {
-    background-color: #141D44;
+  background-color: #141d44;
 }
 
 .cardHeading {
-    font-size: 20px;
-    margin-bottom: 8rem;
+  font-size: 20px;
+  margin-bottom: 8rem;
 }
 
 .colorGrey {
-    color: #515151
+  color: #515151;
 }
 
 .colorWhite {
-    color: #FFFFFF
+  color: #ffffff;
 }
 
 .contentFontSize {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .fontBold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .heading {
-    font-size: 38px;
-    font-weight: 600;
+  font-size: 38px;
+  font-weight: 600;
 }
 
 .headColorBlack {
-    color: black;
+  color: black;
 }
 
 .headColorBlue {
-    color: #2E45A5;
+  color: #2e45a5;
 }
 
 .mb60 {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .subHeading {
-    font-size: 20px;
-    width: 50%
+  font-size: 20px;
+  width: 50%;
 }
 
 .mtAuto {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .iconBg {
-    width: 40px;
-border-radius: 50%;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: auto;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 
 .transWhiteBG {
-    background-color: #ffffff36;
+  background-color: #ffffff36;
 }
 
 .transGreyBG {
-    background-color: #51515136;
+  background-color: #51515136;
 }
 
 .itemContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 30px
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .itemHeading {
-    font-size: 54px;
-    font-weight: 700;
-    color: #141D44
+  font-size: 54px;
+  font-weight: 700;
+  color: #141d44;
 }
 
-.itemContent{
-    font-size: 24px;
-    font-weight: 600;
-    color: #141D44
+.itemContent {
+  font-size: 24px;
+  font-weight: 600;
+  color: #141d44;
 }
 
+.name {
+  font-size: 20px;
+  margin-top: auto;
+}
+
+.flex {
+    display: flex;
+}

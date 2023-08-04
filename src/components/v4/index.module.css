@@ -1,0 +1,53 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.itemWrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.itemBackdrop {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.itemHeading {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.itemContent {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.darkContent {
+    color: rgb(39, 39, 39);
+}
+
+.button {
+    padding: 1rem;
+    font-weight: 600;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.darkButton {
+    border: 1px solid rgb(39,39,39);
+    color: rgb(39, 39, 39);
+}

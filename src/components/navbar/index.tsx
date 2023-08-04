@@ -1,12 +1,13 @@
-'use client'
+"use client";
 
 import classNames from "classnames/bind";
 import styles from "./navbar.module.css";
 import { useEffect, useState } from "react";
+import Menu from "@/icons/Menu";
+import Down from "@/icons/Down";
 const Navbar = () => {
   const [colorChange, setColorChange] = useState(false);
   const bindStyles = classNames.bind(styles);
-  
 
   useEffect(() => {
     const changeNavbarColor = () => {
@@ -24,22 +25,26 @@ const Navbar = () => {
   });
 
   const navStyles = bindStyles("navItem", {
-    navItemActive: colorChange
-  })
+    navItemActive: colorChange,
+  });
+
   return (
     <div className={containerStyes}>
-      <div>
+      <div className={styles.logoWrapper}>
         <img src="/static/images/logo.png" />
       </div>
       <div className={styles.navItems}>
-        <p className={navStyles}>Home</p>
-        <p className={navStyles}>Solutions</p>
-        <p className={navStyles}>Services</p>
-        <p className={navStyles}>Industries</p>
-        <p className={navStyles}>Careers</p>
-        <p className={navStyles}>About us</p>
-        <p className={navStyles}>Contact</p>
-        <p className={navStyles}>Impressum</p>
+        <p className={navStyles}>Home <Down height="12" fill="#444444" /></p>
+        <p className={navStyles}>Solutions <Down height="12" fill="#444444" /></p>
+        {/* <p className={navStyles}>Services</p> */}
+        {/* <p className={navStyles}>Industries</p> */}
+        <p className={navStyles}>Careers <Down height="12" fill="#444444" /></p>
+        <p className={navStyles}>About us <Down height="12" fill="#444444" /></p>
+        <p className={navStyles}>Contact <Down height="12" fill="#444444" /></p>
+        {/* <p className={navStyles}>Impressum</p> */}
+      </div>
+      <div className={styles.menuWrapper}>
+        <Menu height={24} fill="#444444"/>
       </div>
     </div>
   );

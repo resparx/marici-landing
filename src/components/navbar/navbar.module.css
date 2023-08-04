@@ -3,16 +3,24 @@
 .container {
     display: flex;
     width: 100vw;
-    padding: 2rem 12rem;
-    justify-content: space-between;
+    padding: 1rem 4rem;
     align-items: center;
-    z-index: 4;
-    background-color: transparent;
+    z-index: 8;
+    background-color: rgba(255, 255, 255, 0.648);
+    position: fixed;
+}
+
+.logoWrapper {
+    margin-right: 6rem;
 }
 
 .containerActive {
     background-color: white;
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menuWrapper {
+    margin-left: auto
 }
 
 .navItems {
@@ -23,6 +31,9 @@
 .navItem {
     color: #444444;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .navItem:hover {
