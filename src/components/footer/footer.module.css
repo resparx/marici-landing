@@ -1,0 +1,35 @@
+
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    gap: 4rem;
+    padding: 6rem 18rem;
+    background-color: #fbd06d;
+}
+.list__wrapper {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 16rem;
+}
+
+.list__Heading {
+    color: #242424;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.list__item {
+    color: #353535;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    cursor: pointer;
+}
