@@ -6,27 +6,27 @@
 .contentWrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
   width: 100%;
 }
 
 .heading {
   color: #000;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 2rem;
 }
 
 .content {
   color: #000;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
 .iconWrapper {
   background-color: #2E45A5;
-  border-radius: 12px;
+  border-radius: .75rem;
   width: fit-content;
   padding: 10px;
   display: flex;
