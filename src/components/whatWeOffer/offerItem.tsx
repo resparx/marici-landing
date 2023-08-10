@@ -2,13 +2,14 @@ import Right from '@/icons/right';
 import styles from './offerItem.module.css';
 
 
- const OfferItem = ({heading, content}: { heading: string; content: string }) => {
+ const OfferItem = ({heading, content, imgSrc}: { heading: string; content: string; imgSrc: string; }) => {
 
   return (
     <div
       className={styles.container}
     >
       <div className={styles.contentWrapper}>
+        <img className={styles.contentImage} src={imgSrc} />
         <p className={`${styles.heading}`}>
           {heading}
         </p>
@@ -16,7 +17,8 @@ import styles from './offerItem.module.css';
          {content} 
         </p>
         <div className={styles.iconWrapper}>
-        <Right height="22px" fill="#FFFFFF" />
+          Learn more
+        <Right height="16px" fill="#FFFFFF" />
       </div>
       </div>
     </div>

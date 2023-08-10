@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.bgImage {
+    width: 100vw;
+}
+
 .itemWrapper {
     width: 100vw;
     height: 100vh;
@@ -26,12 +30,12 @@
 
 .itemHeading {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .itemContent {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .darkContent {
@@ -39,12 +43,12 @@
 }
 
 .button {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     font-weight: 600;
     background-color: transparent;
     outline: none;
     border: 1px solid white;
-    border-radius: 12px;
+    border-radius: .75rem;
 }
 
 .darkButton {

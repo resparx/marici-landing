@@ -4,7 +4,7 @@
   padding: 6rem 12rem;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 70px;
 }
 
 .imageWrapper {
@@ -19,13 +19,13 @@
 .contentWrapper {
   display: flex;
   flex-direction: column;
-  width: 68%;
+  width: 65%;
 }
 
 .heading {
   font-size: 2.3rem;
   font-weight: 600;
-  color: #febd00;
+  color: #2e45a5;
   width: 70%;
   margin-bottom: 1.2rem;
 }
@@ -33,6 +33,7 @@
 .subHeading {
   color: #404040;
   font-size: 1.1rem;
+  line-height: 1.9rem;
   font-weight: 300;
   width: 100%;
 }
@@ -45,10 +46,11 @@
 
 .button {
   width: fit-content;
-  padding: 1rem;
-  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  border-radius: .75rem;
   margin-top: 40px;
   border: none;
+  background-color: #2E45A5;
 }
 
 @keyframes zoom-in-zoom-out {

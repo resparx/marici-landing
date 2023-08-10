@@ -40,6 +40,31 @@ const Item = ({ vidSrc, heading, content, theme }: any) => {
   );
 };
 
+const ImageItem = ({ imgSrc, heading, content, theme }: any) => {
+  const bindStyles = classNames.bind(styles);
+  const itemHeading = bindStyles("itemHeading", {
+    darkContent: theme === "DARK",
+  });
+
+  const itemContent = bindStyles("itemContent", {
+    darkContent: theme === "DARK",
+  });
+
+  const button = bindStyles("button", {
+    darkButton: theme === "DARK",
+  });
+  return (
+    <div className={`${styles.itemWrapper} ${robotoRegular.className}`}>
+      <img className={styles.bgImage} src={imgSrc} />
+      <div className={styles.itemBackdrop}>
+        <h1 className={itemHeading}>{heading}</h1>
+        <p className={itemContent}>{content}</p>
+        <button className={button}>Know more</button>
+      </div>
+    </div>
+  );
+};
+
 const V4 = () => {
   useEffect(() => {}, []);
   return (
@@ -49,6 +74,18 @@ const V4 = () => {
           heading="SAP Hybris"
           content="Understand your customers better and provide them with seamless & personalized products & services"
           vidSrc="/static/videos/abstract4.mp4"
+        />
+        <ImageItem
+          theme="DARK"
+          imgSrc="/static/images/banner1.jpg"
+          heading="SAP SuccesFactors"
+          content="Transform your human capital management experience to create a more flexible & engaged workforce"
+        />
+        <ImageItem
+          theme="DARK"
+          imgSrc="/static/images/banner2.jpg"
+          heading="SAP Hybris"
+          content="Understand your customers better and provide them with seamless & personalized products & services"
         />
         <Item
           heading="SAP SuccesFactors"

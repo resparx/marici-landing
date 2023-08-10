@@ -22,7 +22,7 @@
 
 .content {
     color: #323232;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 300;
 }
 
@@ -36,7 +36,7 @@
 
 .iconBg {
     border-radius: 50%;
-    background-color: #333138;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;

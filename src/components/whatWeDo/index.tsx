@@ -12,7 +12,7 @@ const WhatWeDo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imageWrapper}>
-        <img className={styles.image} src="https://i.imgur.com/ysctOvt.png" />
+        <img className={styles.image} src="/static/images/whatwedo.png" />
       </div>
       <div className={styles.contentWrapper}>
         <p className={styles.heading}>
@@ -33,25 +33,26 @@ const WhatWeDo = () => {
             selectedItem={3}
           > */}
           <Item
-            icon={<Team fill="#febd00" height={32} />}
+            icon={<Team fill="#2e45a5" height={32} />}
             heading="Digital Supply Chain"
             content="Transparent and customer-driven supply networks to fulfill demand from anywhere by forecasting demand and getting the right products to stores and customers at the right time."
           />
           <Item
-            icon={<Rocket fill="#febd00" height={32} />}
+            icon={<Rocket fill="#2e45a5" height={32} />}
             heading="Intelligent Enterprise"
             content="Unlock the full power of your data and automate your operations & integrate intelligence into every process to improve customer, employee, product, and brand experiences."
           />
           <Item
-            icon={<Graph fill="#febd00" height={32} />}
-            heading="E-commerce"
-            content="Customer Touchpoints, Supporting Applications, Master Data & Core Processes."
-          />
-          <Item
-            icon={<Gears fill="#febd00" height={32} />}
+            icon={<Gears fill="#2e45a5" height={32} />}
             heading="Network & Sourcing"
             content="Supplier Management, Strategic Sourcing, Procurement, Selling and Fulfillment."
           />
+          <Item
+            icon={<Graph fill="#2e45a5" height={32} />}
+            heading="E-commerce"
+            content="Customer Touchpoints, Supporting Applications, Master Data & Core Processes."
+          />
+          
           {/* <Item
               icon={<Gears fill="#febd00" height={32} />}
               heading="Point of sale"

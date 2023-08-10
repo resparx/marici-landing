@@ -34,17 +34,17 @@ const Navbar = () => {
         <img src="/static/images/logo.png" />
       </div>
       <div className={styles.navItems}>
-        <p className={navStyles}>Home <Down height="12" fill="#444444" /></p>
-        <p className={navStyles}>Solutions <Down height="12" fill="#444444" /></p>
+        <p className={navStyles}>Home <Down height="16" fill="#FFFFFF" /></p>
+        <p className={navStyles}>Solutions <Down height="16" fill="#FFFFFF" /></p>
         {/* <p className={navStyles}>Services</p> */}
         {/* <p className={navStyles}>Industries</p> */}
-        <p className={navStyles}>Careers <Down height="12" fill="#444444" /></p>
-        <p className={navStyles}>About us <Down height="12" fill="#444444" /></p>
-        <p className={navStyles}>Contact <Down height="12" fill="#444444" /></p>
+        <p className={navStyles}>Careers <Down height="16" fill="#FFFFFF" /></p>
+        <p className={navStyles}>About us <Down height="16" fill="#FFFFFF" /></p>
+        <p className={navStyles}>Contact <Down height="16" fill="#FFFFFF" /></p>
         {/* <p className={navStyles}>Impressum</p> */}
       </div>
       <div className={styles.menuWrapper}>
-        <Menu height={24} fill="#444444"/>
+        <Menu height={24} fill="#FFFFFF"/>
       </div>
     </div>
   );

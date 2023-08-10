@@ -29,7 +29,6 @@
 
 .itemContainer {
   display: flex;
-  gap: 12rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
