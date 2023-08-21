@@ -1,3 +1,8 @@
+import Email from "@/icons/email";
+import Facebook from "@/icons/facebook";
+import Linkedin from "@/icons/linkedin";
+import Twitter from "@/icons/twitter";
+
 const Li = ({ children }) => {
   return <li className="text-lg font-normal text-gray-50">{children}</li>;
 };
@@ -45,6 +50,14 @@ const Footer = () => {
       </ul>
       <ul className="flex flex-col w-48 gap-3">
         <li className="text-2xl font-semibold text-white mb-8">Follow Us</li>
+        <li>
+          <div className="flex gap-2">
+            <Twitter className="h-8 fill-slate-200" />
+            <Linkedin className="h-8 fill-slate-200" />
+            <Facebook className="h-8 fill-slate-200" />
+            <Email className="h-8 fill-slate-200" />
+          </div>
+        </li>
       </ul>
     </footer>
   );

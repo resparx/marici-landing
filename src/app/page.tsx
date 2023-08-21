@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import OurPartners from "@/components/ourPartners";
 import OurServices from "@/components/ourServices";
+import Social from "@/components/social";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Expertise />
         <CaseStudies />
         <OurPartners />
+        <Social />
         <Footer />
     </main>
   )
