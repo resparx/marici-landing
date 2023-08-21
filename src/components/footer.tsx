@@ -3,7 +3,7 @@ import Facebook from "@/icons/facebook";
 import Linkedin from "@/icons/linkedin";
 import Twitter from "@/icons/twitter";
 
-const Li = ({ children }) => {
+const Li = ({ children }: { children: any }) => {
   return <li className="text-lg font-normal text-gray-50">{children}</li>;
 };
 
