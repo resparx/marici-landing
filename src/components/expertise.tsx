@@ -65,7 +65,7 @@ const ExpertiseTypeB = ({ reverse }: { reverse?: boolean }) => {
 
 const Expertise = () => {
   return (
-    <div className="flex flex-col w-full px-64 py-20">
+    <div className="flex flex-col w-full px-32 py-20">
       <div className="flex flex-col gap-4 w-2/3">
         <SectionPill title="Our expertise" />
         <p className="text-4xl font-bold text-gray-900">

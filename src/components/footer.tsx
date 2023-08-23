@@ -9,7 +9,7 @@ const Li = ({ children }: { children: any }) => {
 
 const Footer = () => {
   return (
-    <footer className="flex w-full bg-slate-900 px-64 py-24 justify-between">
+    <footer className="flex w-full bg-slate-900 px-32 py-24 justify-between">
       <ul className="w-52">
         <li className="mb-9">
           <img className="w-full" src="/static/images/maharshi_light.png" />
