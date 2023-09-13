@@ -116,7 +116,7 @@ const Banner = () => {
               <textarea className={classNames(`${inputClasses} h-64`)} />
             </div>
 
-            <button className="text-xl text-white w-fit bg-green-500 py-3 px-5 rounded-lg">
+            <button className="text-base font-semibold text-white w-fit bg-green-500 py-3 px-5 rounded-lg">
               Submit
             </button>
           </form>

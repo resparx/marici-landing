@@ -9,7 +9,7 @@ const AboutUs = () => {
     return <div className="bg-white">
         <Navbar/>   
         <Banner />
-        {/* <MapView /> */}
+        <MapView />
         <FAQ/>
         <Footer/>
     </div>

@@ -19,7 +19,7 @@ const FAQ = () => {
             content: <p>Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.</p>
         }
     ]
-    return <div className="flex px-48 justify-between mt-36">
+    return <div className="flex px-48 justify-between mt-16">
         <p className=" w-[30%] text-7xl text-gray-800 font-semibold">
             Frequently asked questions
         </p>
