@@ -23,7 +23,7 @@ const Service = ({
     ...iconProps,
   };
   return (
-    <div className="flex flex-col w-[30%] bg-slate-50 rounded-2xl p-8 gap-4">
+    <div className="flex flex-col w-[30%] bg-slate-50 rounded-2xl p-8 gap-4 shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
       <RenderIcon type={iconType} {...baseIconProps} />
       <p className="text-sky-950 font-semibold text-2xl">{heading}</p>
       <p className="text-sky-950 text-lg">{content}</p>

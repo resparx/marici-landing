@@ -1,6 +1,6 @@
 import SectionPill from "./common/sectionPill";
 
-const CaseStudy = ({
+export const CaseStudy = ({
   img,
   title,
   content,
@@ -10,7 +10,7 @@ const CaseStudy = ({
   content: string;
 }) => {
   return (
-    <div className="flex flex-col gap-4 w-1/4">
+    <div className="flex flex-col gap-4 w-1/4 mb-24">
       <img className="rounded-xl" src={img} />
       <p className="text-xl font-bold text-white">{title}</p>
       <p className="text-base font-medium text-gray-500" >{content}</p>

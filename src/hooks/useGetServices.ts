@@ -62,7 +62,7 @@ const useGetServices = (
       case "implementation-and-rollout-services":
         setServices({
           title: "Implementation and Rollout Services",
-          image: 'https://i.imgur.com/MFm2n85.jpg',
+          image: 'https://i.imgur.com/ijsQSOc.jpg',
           subServices: [
             {
               name: "SAP ECC",
