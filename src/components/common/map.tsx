@@ -1,6 +1,6 @@
 "use client";
 
-import mapboxgl, { Map as MapType } from "mapbox-gl";
+import mapboxgl from "mapbox-gl";
 import { useEffect, useRef, useState } from "react";
 
 mapboxgl.accessToken =
@@ -81,7 +81,7 @@ const Map = () => {
   }, []);
 
   return (
-    <div ref={mapContainerRef} className="p-8 h-[520px] rounded-lg overflow-hidden">
+    <div ref={mapContainerRef} className="h-[520px] rounded-lg overflow-hidden">
     </div>
   );
 };

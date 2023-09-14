@@ -1,7 +1,7 @@
 import Map from "../common/map"
 
 const MapView = () => {
-    return <div className="w-full p-20">
+    return <div className="w-full p-32">
         <Map/>
     </div>
 }

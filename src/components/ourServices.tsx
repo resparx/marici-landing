@@ -18,7 +18,7 @@ const ServiceItem = ({
   return (
     <div className="flex flex-col gap-4 w-64">
       <div className="flex justify-center">
-        <div className="rounded-2xl bg-green-600 p-4">{icon}</div>
+        <div className="rounded-2xl bg-sky-600 p-4">{icon}</div>
       </div>
       <p className="text-xl font-bold text-gray-900 text-center">{title}</p>
       <p className="text-base text-gray-500 font-medium text-center">

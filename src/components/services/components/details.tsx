@@ -12,8 +12,8 @@ const Details = () => {
 };
 
 const Pill = ({title}: {title: string}) => {
-    return <div className="flex items-center justify-center rounded-full bg-green-300 p-3 w-fit">
-        <p className="text-green-900 text-xs font-semibold">
+    return <div className="flex items-center justify-center rounded-full bg-sky-300 p-3 w-fit">
+        <p className="text-sky-900 text-xs font-semibold">
             {title}
         </p>
     </div>
@@ -41,7 +41,7 @@ const DetailsType = ({reverse}: {reverse?: boolean}) => {
       "flex-row-reverse": reverse
     })}>
       <div className="w-1/2 relative overflow-hidden rounded-2xl">
-        <img className="rounded-2xl" src="https://placehold.co/600x400/green/white" />
+        <img className="rounded-2xl" src="https://placehold.co/600x400/sky/white" />
       </div>
       <div className="flex flex-col w-1/2 gap-4">
         <Pill title="Nostrud ea" />

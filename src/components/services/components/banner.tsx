@@ -5,20 +5,22 @@ import { useParams } from "next/navigation";
 
 const Banner = () => {
   const { service } = useParams();
-  const { title, subServices } = useGetServices(service.toString());
+  const { title, image } = useGetServices(service.toString());
+  console.log(image,"image")
   return (
-    <section className="flex flex-col gap-8 justify-center items-center pt-44 h-screen">
-      <h1 className="text-slate-800 font-bold text-5xl w-1/3 text-center">
-        {title}
-      </h1>
-      <p className="text-slate-700 w-1/3 text-xl text-center">
-        Amet sint proident occaecat occaecat officia ea occaecat do incididunt
-        irure pariatur consectetur amet officia.
-      </p>
-      <button className="rounded-lg px-4 py-4 bg-green-500 text-gray-900">
-        Know more
-      </button>
-      <img src="" alt="" />
+    <section
+      className="flex flex-col gap-8 justify-center items-start h-[600px] bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${image})`,
+      }}
+    >
+      <div className="w-full h-full pb-32 px-32 bg-opacity-80 bg-slate-900 flex justify-end flex-col gap-4">
+        <h1 className="text-white font-bold text-4xl w-[30%]">{title}</h1>
+        <p className="text-white w-1/3 text-lg">
+          Amet sint proident occaecat occaecat officia ea occaecat do incididunt
+          irure pariatur consectetur amet officia.
+        </p>
+      </div>
     </section>
   );
 };

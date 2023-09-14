@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar"
 import Banner from "../../../components/services/components/banner"
 import AllServices from "@/components/services/components/allServices"
 import Details from "@/components/services/components/details"
+import Footer from "@/components/footer"
 
 
 
@@ -11,6 +12,7 @@ const Services = () => {
         <Banner />
         <AllServices />
         <Details />
+        <Footer/>
     </div>
 }
 

@@ -20,8 +20,8 @@ const Mode = ({
       <p className="text-lg text-gray-700 font-semibold">{heading}</p>
       <p className="text-base text-gray-700 w-[80%]">{content}</p>
       <div className="flex gap-3 items-center">
-        <RenderIcon className="fill-green-600" type={iconType} />{" "}
-        <Link className="text-green-600 font-semibold" href={href}>
+        <RenderIcon className="fill-sky-600" type={iconType} />{" "}
+        <Link className="text-sky-600 font-semibold" href={href}>
           {linkText}
         </Link>
       </div>
@@ -116,7 +116,7 @@ const Banner = () => {
               <textarea className={classNames(`${inputClasses} h-64`)} />
             </div>
 
-            <button className="text-base font-semibold text-white w-fit bg-green-500 py-3 px-5 rounded-lg">
+            <button className="text-base font-semibold text-white w-fit bg-sky-500 py-3 px-5 rounded-lg">
               Submit
             </button>
           </form>

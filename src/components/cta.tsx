@@ -6,7 +6,7 @@ const CTA = () => {
         <p className="text-xl font-medium text-gray-400">Flex is a Small SaaS Business. Flex isn’t a traditional company.</p>
       </div>
       <div className="flex items-center gap-6">
-        <button className="px-7 py-4 bg-green-500 rounded-xl h-fit">
+        <button className="px-7 py-4 bg-sky-500 rounded-xl h-fit">
             Get started
         </button>
         <button className="px-7 py-4 bg-gray-100 rounded-xl h-fit text-gray-800">

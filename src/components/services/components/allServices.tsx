@@ -19,15 +19,15 @@ const Service = ({
   iconProps?: {};
 }): ReactNode => {
   const baseIconProps = {
-    className: "h-8 w-8 fill-green-500",
+    className: "h-8 w-8 fill-sky-700",
     ...iconProps,
   };
   return (
-    <div className="flex flex-col w-[30%] bg-green-50 rounded-2xl p-8 gap-4">
+    <div className="flex flex-col w-[30%] bg-slate-50 rounded-2xl p-8 gap-4">
       <RenderIcon type={iconType} {...baseIconProps} />
-      <p className="text-slate-800 font-semibold text-2xl">{heading}</p>
-      <p className="text-slate-600 text-lg">{content}</p>
-      <button className="text-green-700 text-base font-semibold w-fit rounded-lg">
+      <p className="text-sky-950 font-semibold text-2xl">{heading}</p>
+      <p className="text-sky-950 text-lg">{content}</p>
+      <button className="text-sky-700 text-base font-semibold w-fit rounded-lg">
         Know more
       </button>
     </div>

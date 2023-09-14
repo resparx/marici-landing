@@ -4,7 +4,7 @@ import classNames from "classnames";
 const Sub = ({ title, content }: { title: string; content: string }) => {
   return (
     <div className="flex">
-      <div className="flex bg-green-500 rounded-2xl"></div>
+      <div className="flex bg-sky-500 rounded-2xl"></div>
       <div className="flex flex-col gap-4">
         <p className="text-2xl font-bold text-gray-900">{title}</p>
         <p className="text-base font-medium text-gray-500 w-2/3">{content}</p>
@@ -55,7 +55,7 @@ const ExpertiseTypeB = ({ reverse }: { reverse?: boolean }) => {
           invoicing capabilities, you can manage every aspect of your business
           in one secure platform.
         </p>
-        <button className="bg-green-500 text-white py-3 px-5 rounded-xl w-fit">
+        <button className="bg-sky-500 text-white py-3 px-5 rounded-xl w-fit">
           Know more
         </button>
       </div>
