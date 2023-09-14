@@ -1,9 +1,11 @@
-import Map from "../common/map"
+import Map from "../common/map";
 
 const MapView = () => {
-    return <div className="w-full p-32">
-        <Map/>
+  return (
+    <div className="w-full p-32">
+      <Map />
     </div>
-}
+  );
+};
 
-export default MapView
+export default MapView;

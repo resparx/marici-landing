@@ -31,8 +31,8 @@ const FAQ = () => {
                 Tempor veniam quis duis ullamco sunt qui enim enim non commodo.Tempor veniam quis duis ullamco sunt qui enim enim non commodo.Tempor veniam quis duis ullamco sunt qui enim enim non commodo.
             </p>
             <div className="flex flex-col">
-                {accordionItems.map(item => {
-                    return <Accordion {...item} />
+                {accordionItems.map((item, index: number) => {
+                    return <Accordion key={`accordian-${index}`} {...item} />
                 })}
             </div>
         </div>
