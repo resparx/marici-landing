@@ -3,20 +3,20 @@ import Accordion from "../common/accordion"
 const FAQ = () => {
     const accordionItems = [
         {
-            heading: 'Elit nostrud proident ullamco',
-            content: <p>Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.</p>
+            title: 'Elit nostrud proident ullamco',
+            content: 'Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.'
         },
         {
-            heading: 'Elit nostrud proident ullamco',
-            content: <p>Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.</p>
+            title: 'Elit nostrud proident ullamco',
+            content: 'Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.'
         },
         {
-            heading: 'Elit nostrud proident ullamco',
-            content: <p>Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.</p>
+            title: 'Elit nostrud proident ullamco',
+            content: 'Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.'
         },
         {
-            heading: 'Elit nostrud proident ullamco',
-            content: <p>Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.</p>
+            title: 'Elit nostrud proident ullamco',
+            content: 'Ex occaecat reprehenderit non laborum commodo occaecat laborum do commodo excepteur aliqua aliqua.Aute labore do veniam ea qui fugiat amet id in fugiat.Consequat aliqua elit eiusmod tempor in id pariatur nulla duis elit.'
         }
     ]
     return <div className="flex px-48 justify-between my-16">
@@ -30,7 +30,11 @@ const FAQ = () => {
             <p className="text-lg font-normal text-gray-800 mb-6" >
                 Tempor veniam quis duis ullamco sunt qui enim enim non commodo.Tempor veniam quis duis ullamco sunt qui enim enim non commodo.Tempor veniam quis duis ullamco sunt qui enim enim non commodo.
             </p>
-            <Accordion items={accordionItems} />
+            <div className="flex flex-col">
+                {accordionItems.map(item => {
+                    return <Accordion {...item} />
+                })}
+            </div>
         </div>
     </div>
 }

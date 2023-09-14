@@ -1,45 +1,42 @@
-"use client";
+"use client"
 
-import Right from "@/icons/right";
-import { useEffect } from "react";
-import { Collapse, initTE } from "tw-elements";
+import CaretDown from "@/icons/caret-down";
+import CaretUp from "@/icons/caret-up";
+import { useRef, useState } from "react";
 
-const Accordion = ({ items = [] }: { items: any }) => {
-  useEffect(() => {
-    initTE({ Collapse });
-  }, []);
+type AccordionPropType = {
+  title: string
+  content: string
+}
+
+const Accordion = ({ title, content }: AccordionPropType) => {
+  const [isOpened, setOpened] = useState<boolean>(false);
+  const [height, setHeight] = useState<string>("0px");
+  const contentElement = useRef<HTMLDivElement>(null);
+
+  const HandleOpening = () => {
+    setOpened(!isOpened);
+    setHeight(
+      !isOpened
+        ? `${
+            contentElement.current ? contentElement.current.scrollHeight : 0
+          }px`
+        : "0px"
+    );
+  };
   return (
-    <div id="accordionExample">
-      {items.map((item: any, index: number) => (
-        <div className="bg-white" key={`accordion${index}`}>
-          <h2 className="mb-0" id={`heading${index}`}>
-            <button
-              className="group relative flex w-full items-center rounded-none border-0 bg-white py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] :bg-neutral-800 font-bold"
-              type="button"
-              data-te-collapse-init
-              data-te-collapse-collapsed
-              data-te-target={`#collapse${index}`}
-              aria-expanded="false"
-              aria-controls={`collapse${index}`}
-            >
-              {item.heading}
-              <span className="flex justify-center items-center ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none">
-                <Right/>
-              </span>
-            </button>
-          </h2>
-          <div
-            id={`collapse${index}`}
-            className="!visible hidden"
-            data-te-collapse-item
-            data-te-collapse-show
-            aria-labelledby={`heading${index}`}
-            data-te-parent="#accordionExample"
-          >
-            <div className="px-5 py-4 text-gray-800">{item.content}</div>
-          </div>
-        </div>
-      ))}
+    <div onClick={HandleOpening}>
+      <div className={"p-4 flex justify-between text-slate-800 cursor-pointer hover:bg-sky-50"}>
+        <h4 className="font-semibold">{title}</h4>
+        {isOpened ? <CaretUp /> : <CaretDown />}
+      </div>
+      <div
+        ref={contentElement}
+        style={{ height: height }}
+        className="overflow-hidden transition-all duration-200"
+      >
+        <p className="p-4 text-slate-700">{content}</p>
+      </div>
     </div>
   );
 };
