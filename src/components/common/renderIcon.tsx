@@ -15,7 +15,7 @@ import ShareNodes from "@/icons/share-nodes";
 import Stamp from "@/icons/stamp";
 import Tosca from "@/icons/tosca";
 
-const RenderIcon = ({ type, ...rest }: { type?: string }) => {
+const RenderIcon = ({ type, ...rest }: { type?: string; className: string; }) => {
   switch (type) {
     case "PHONE":
       return <Phone {...rest} />;
