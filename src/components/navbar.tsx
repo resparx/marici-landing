@@ -86,7 +86,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="flex items-center">
-          <Link className="text-slate-800" href="/">
+          <Link className="text-slate-800" href="/about-us">
             <p className="font-medium">
               About us
               {/* <Down className="inline ml-1" /> */}
