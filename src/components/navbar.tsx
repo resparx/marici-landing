@@ -35,7 +35,7 @@ const Navbar = () => {
             </p>
             <ul className="hidden hover:flex peer-hover:flex flex-col gap-6 absolute top-20 bg-white backdrop-blur-sm bg-opacity-80 p-3 rounded-b-lg rounded-br-lg">
               <li>
-                <Link href="/services/digital-transformation-and-consulting-service">
+                <Link href="/services/implementation-and-consulting-service">
                   <p>Digital transformation and Consulting Services</p>
                 </Link>
               </li>

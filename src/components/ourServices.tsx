@@ -46,7 +46,7 @@ const OurServices = () => {
         <ServiceItem
           icon={<Bolt className="fill-white h-8" />}
           title="Digital transformation and Consulting Services"
-          content="Stay connected with your team and make quick decisions wherever you are."
+          content="Our consulting services empower your organization to navigate the digital landscape, optimize operations, and enhance customer experiences. Unlock your digital potential with Marici"
         />
         <ServiceItem
           icon={<Chart className="fill-white h-8" />}

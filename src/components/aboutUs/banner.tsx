@@ -1,6 +1,6 @@
 const Tile = () => {
   return (
-    <div className="h-[400px] w-[240px] relative">
+    <div className="h-[400px] w-[240px] relative rounded-lg overflow-hidden">
       <img src="https://placehold.co/240x400/darkcyan/darkcyan" />
       <div className="flex flex-col bg-gradient-to-t from-slate-900 to-transparent absolute top-0 left-0 h-full p-4">
         <p className="text-lg font-semibold mt-auto">

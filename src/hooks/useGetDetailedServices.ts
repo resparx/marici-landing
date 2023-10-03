@@ -19,7 +19,7 @@ const useGetDetailedServices = (serviceType: string,
       });
       useEffect(() => {
         switch (serviceType) {
-          case "digital-transformation-and-consulting-service":
+          case "implementation-and-consulting-service":
             setServices({
               title: "Digital transformation and Consulting Service",
               subServices: [
