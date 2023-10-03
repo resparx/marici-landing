@@ -1,5 +1,5 @@
 const content = {
-    name: "CRM services",
+    title: "CRM services",
     imgSrc: "9WNYYwg.png",
     iconType: "LIST_CHECKED",
     content:

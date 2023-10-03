@@ -4,7 +4,7 @@ import riseWithSapPublic from "./riseWithSapPublic";
 import riseWithSapPrivate from "./riseWithSapPrivate";
 
 const content = {
-  name: "ERP services",
+  title: "ERP services",
   imgSrc: "9WNYYwg.png",
   iconType: "LIST_CHECKED",
   content:

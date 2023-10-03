@@ -7,7 +7,7 @@ type Services = {
   image: string;
   subTitle: string;
   subServices: {
-    name: string;
+    title: string;
     imgSrc: string;
     content: string;
     iconType: string;

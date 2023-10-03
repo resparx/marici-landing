@@ -42,10 +42,11 @@ const AllServices = () => {
   return (
     <section className="flex flex-wrap mx-auto w-3/4 gap-16">
       {subServices.map((item, index: number) => {
+        console.log(subServices, "subServices")
         return (
           <Service
             key={`service-${index}`}
-            heading={item.name}
+            heading={item.title}
             content={item.content}
             imgSrc={item.imgSrc}
             iconType={item.iconType}
