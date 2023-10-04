@@ -7,27 +7,26 @@ import { useParams } from "next/navigation";
 import { ReactNode } from "react";
 import SubServices from "./subServices";
 
-
-const Points = ({points}) => {
-  const renderPoints = points.length > 3 ? points.slice(0, 3) : points
-  return <div>
-    {renderPoints.map((point, index) => {
-      return <div key={`point-${index}`} className="flex">
-        <div>
-          <RenderIcon />
-        </div>
-        <div>
-          <p>
-            {point.title}
-          </p>
-          <p>
-            {point.content}
-          </p>
-        </div>
-      </div>
-    })}
-  </div>
-}
+const Points = ({ points }) => {
+  const renderPoints = points.length > 3 ? points.slice(0, 3) : points;
+  return (
+    <div>
+      {renderPoints.map((point, index) => {
+        return (
+          <div key={`point-${index}`} className="flex">
+            <div>
+              <RenderIcon />
+            </div>
+            <div>
+              <p>{point.title}</p>
+              <p>{point.content}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 const Service = ({
   title,
@@ -37,7 +36,7 @@ const Service = ({
   iconProps = {},
   reverse,
   points,
-  subServices
+  subServices,
 }: {
   title: string;
   content: string;
@@ -52,12 +51,15 @@ const Service = ({
     className: "h-6 w-6 fill-sky-700",
     ...iconProps,
   };
-  console.log(subServices, points)
+  console.log(subServices, points);
   return (
-    <div
-      className={classNames("flex w-[100%] justify-between transition-all mb-40", {
-        "flex-row-reverse": reverse,
-      })}
+      <div
+      className={classNames(
+        "flex w-[100%] justify-between transition-all mb-40",
+        {
+          "flex-row-reverse": reverse,
+        }
+      )}
     >
       <div className="flex flex-col w-[45%] gap-4">
         <div className="flex gap-4 items-center">
@@ -65,7 +67,8 @@ const Service = ({
           <p className="text-sky-950 font-semibold text-xl">{title}</p>
         </div>
         <p className="text-sky-950 text-base9 mt-5">{content}</p>
-        {subServices ? <SubServices subServices={subServices} /> : <Points points={points} />}
+        {subServices && <SubServices subServices={subServices} />}
+        {points && <Points points={points} />}
         <button className="text-sky-700 text-lg font-semibold w-fit rounded-lg mt-auto">
           Know more
         </button>

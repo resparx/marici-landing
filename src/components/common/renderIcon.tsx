@@ -1,3 +1,4 @@
+import ArrowRight from "@/icons/arrow-right";
 import BarsStaggered from "@/icons/bars-staggered";
 import Chip from "@/icons/chip";
 import Cloud from "@/icons/cloud";
@@ -9,13 +10,20 @@ import Internet from "@/icons/internet";
 import ListCheck from "@/icons/list-check";
 import Paint from "@/icons/paint";
 import Phone from "@/icons/phone";
+import Right from "@/icons/right";
 import Sap from "@/icons/sap";
 import Selenium from "@/icons/selenium";
 import ShareNodes from "@/icons/share-nodes";
 import Stamp from "@/icons/stamp";
 import Tosca from "@/icons/tosca";
 
-const RenderIcon = ({ type, ...rest }: { type?: string; className: string; }) => {
+const RenderIcon = ({
+  type,
+  ...rest
+}: {
+  type?: string;
+  className: string;
+}) => {
   switch (type) {
     case "PHONE":
       return <Phone {...rest} />;
@@ -42,11 +50,15 @@ const RenderIcon = ({ type, ...rest }: { type?: string; className: string; }) =>
     case "SHARE_NODES":
       return <ShareNodes {...rest} />;
     case "SELENIUM":
-      return <Selenium {...rest} />
+      return <Selenium {...rest} />;
     case "TOSCA":
-      return <Tosca {...rest} />
+      return <Tosca {...rest} />;
     case "PAINT":
-      return <Paint {...rest} />
+      return <Paint {...rest} />;
+    case "RIGHT":
+      return <Right {...rest} />;
+    case "ARROW_RIGHT":
+      return <ArrowRight {...rest} />;
     default:
       return <BarsStaggered {...rest} />;
   }
