@@ -103,22 +103,25 @@ const content = {
       ],
     },
     {
-        title: "SAP Customer Data Cloud",
-        content: "need content",
-        points: [
-            {
-                title: "Identity and Consent Management",
-                content: "Ensure data privacy compliance while giving customers control over their data."
-            },
-            {
-                title: "Single Sign-On (SSO)",
-                content: "Simplify user authentication across your digital properties."
-            },
-            {
-                title: "Customer Registration",
-                content: "Streamline the registration process for a frictionless customer journey."
-            }
-        ]
+      title: "SAP Customer Data Cloud",
+      content: "need content",
+      points: [
+        {
+          title: "Identity and Consent Management",
+          content:
+            "Ensure data privacy compliance while giving customers control over their data.",
+        },
+        {
+          title: "Single Sign-On (SSO)",
+          content:
+            "Simplify user authentication across your digital properties.",
+        },
+        {
+          title: "Customer Registration",
+          content:
+            "Streamline the registration process for a frictionless customer journey.",
+        },
+      ],
     },
   ],
 };

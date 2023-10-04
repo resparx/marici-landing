@@ -5,6 +5,7 @@ import useGetServices from "@/hooks/useGetServices";
 import classNames from "classnames";
 import { useParams } from "next/navigation";
 import { ReactNode } from "react";
+import SubServices from "./subServices";
 
 
 const Points = ({points}) => {
@@ -29,24 +30,29 @@ const Points = ({points}) => {
 }
 
 const Service = ({
-  heading,
+  title,
   content,
   imgSrc,
   iconType,
   iconProps = {},
   reverse,
+  points,
+  subServices
 }: {
-  heading: string;
+  title: string;
   content: string;
   imgSrc: string;
   iconType: string;
   iconProps?: {};
   reverse: boolean;
+  points: any;
+  subServices: any;
 }): ReactNode => {
   const baseIconProps = {
     className: "h-6 w-6 fill-sky-700",
     ...iconProps,
   };
+  console.log(subServices, points)
   return (
     <div
       className={classNames("flex w-[100%] justify-between transition-all mb-40", {
@@ -56,10 +62,10 @@ const Service = ({
       <div className="flex flex-col w-[45%] gap-4">
         <div className="flex gap-4 items-center">
           <RenderIcon type={iconType} {...baseIconProps} />
-          <p className="text-sky-950 font-semibold text-xl">{heading}</p>
+          <p className="text-sky-950 font-semibold text-xl">{title}</p>
         </div>
         <p className="text-sky-950 text-base9 mt-5">{content}</p>
-        {/* <Points /> */}
+        {subServices ? <SubServices subServices={subServices} /> : <Points points={points} />}
         <button className="text-sky-700 text-lg font-semibold w-fit rounded-lg mt-auto">
           Know more
         </button>
@@ -73,7 +79,7 @@ const Service = ({
 
 const AllServices = () => {
   const { service } = useParams();
-  const { title, subServices } = useGetServices(service.toString());
+  const { subServices } = useGetServices(service.toString());
   return (
     <section className="flex flex-wrap mx-auto w-full px-52 gap-16">
       {subServices.map((item, index: number) => {
@@ -81,11 +87,7 @@ const AllServices = () => {
           <Service
             reverse={index % 2 !== 0}
             key={`service-${index}`}
-            heading={item.title}
-            content={item.content}
-            imgSrc={item.imgSrc}
-            iconType={item.iconType}
-            iconProps={item.iconProps}
+            {...item}
           />
         );
       })}

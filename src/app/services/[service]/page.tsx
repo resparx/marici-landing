@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar"
-import Banner from "../../../components/services/components/banner"
-import AllServices from "@/components/services/components/allServices"
-import Details from "@/components/services/components/details"
+import Banner from "../../../components/services/banner"
+import AllServices from "@/components/services/allServices"
+import Details from "@/components/services/details"
 import Footer from "@/components/footer"
 
 

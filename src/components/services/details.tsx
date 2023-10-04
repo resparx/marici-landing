@@ -74,7 +74,7 @@ const Details = () => {
   return (
     <div className="flex flex-col mt-24 gap-40">
       {subServices.map((items, index) => (
-        <DetailsType {...items} reverse={index % 2 != 0} />
+        <DetailsType {...items} key={`service-${index}`} reverse={index % 2 != 0} />
       ))}
     </div>
   );
