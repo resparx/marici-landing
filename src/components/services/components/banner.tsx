@@ -6,12 +6,12 @@ import { useParams } from "next/navigation";
 
 const Banner = () => {
   const { service } = useParams();
-  const { title, image, subTitle } = useGetServices(service.toString());
+  const { title, image, content } = useGetServices(service.toString());
   return (
     <Commonbanner
       title={title}
       image={image}
-      subTitle={subTitle}
+      subTitle={content}
     />
   );
 };

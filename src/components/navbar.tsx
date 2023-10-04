@@ -36,37 +36,22 @@ const Navbar = () => {
             <ul className="hidden hover:flex peer-hover:flex flex-col gap-6 absolute top-20 bg-white backdrop-blur-sm bg-opacity-80 p-3 rounded-b-lg rounded-br-lg">
               <li>
                 <Link href="/services/implementation-and-consulting-service">
-                  <p>Digital transformation and Consulting Services</p>
+                  <p>Implementation and Consulting Services</p>
                 </Link>
               </li>
               <li>
-                <Link href="/services/implementation-and-rollout-services">
-                  <p>Implementation and Rollout Services</p>
+                <Link href="/services/upgrade-migration-services">
+                  <p>Upgrade and Migration Services (SAP/CRM) </p>
                 </Link>
               </li>
               <li>
-                <Link href="/services/conversion-and-migration-services">
-                  <p>Conversion and Migration Services</p>
+                <Link href="/services/support-maintenance-services">
+                  <p>ERP/Cx Support and Maintenance Services</p>
                 </Link>
               </li>
               <li>
-                <Link href="/services/application-management-services">
-                  <p>Application Management Service</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/integration-and-Analytic-Services">
-                  <p>Integration and Analytic Services</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/testing-services">
-                  <p>Testing Services</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/application-development-and-extension-services">
-                  <p>Application Development & Extension Services</p>
+                <Link href="/services/application-development-frontend-services">
+                  <p>Application Developement and Front end Services</p>
                 </Link>
               </li>
               <li>

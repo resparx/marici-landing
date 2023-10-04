@@ -11,7 +11,6 @@ const Services = () => {
         <Navbar/>
         <Banner />
         <AllServices />
-        <Details />
         <Footer/>
     </div>
 }

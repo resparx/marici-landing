@@ -5,8 +5,8 @@ const Commonbanner = ({image, title, subTitle}: { image: string; title: string; 
       backgroundImage: `url(${image})`,
     }}
   >
-    <div className="w-full h-full pb-32 px-32 bg-opacity-80 bg-slate-900 flex justify-end flex-col gap-4">
-      <h1 className="text-white font-bold text-4xl w-[30%]">{title}</h1>
+    <div className="w-full h-full pb-32 px-52 bg-gradient-to-t from-slate-950 to-slate-500 flex justify-end flex-col gap-4">
+      <h1 className="text-white font-bold text-4xl w-[40%]">{title}</h1>
       <p className="text-white w-1/2 text-lg">
         {subTitle}
       </p>

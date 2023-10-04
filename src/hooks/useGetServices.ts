@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 
 import implementationContent from "../constants/content/services/implementationConsultingService"
+import erpCoversionMigrationContent from "../constants/content/services/erpConversionMigrationService"
+import supportMaintenanceServices from "../constants/content/services/ERP-CRMSupportMaintenanceServices"
+import applicationContent from "../constants/content/services/applicationDevelopmentFrontendServices "
 
 type Services = {
   title: string;
@@ -30,7 +33,12 @@ const useGetServices = (
       case "implementation-and-consulting-service":
         setServices(implementationContent);
         break;
-
+      case "upgrade-migration-services":
+        setServices(erpCoversionMigrationContent);
+      case "support-maintenance-services":
+        setServices(supportMaintenanceServices);
+      case "application-development-frontend-services":
+        setServices(applicationContent);
       default: {
         setServices({
           title: "",
