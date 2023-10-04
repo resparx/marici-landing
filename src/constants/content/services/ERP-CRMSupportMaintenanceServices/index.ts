@@ -1,4 +1,5 @@
-
+import shared from './shared'
+import dedicated from './dedicated'
 
 const content = {
     title: "ERP/CRM Support and Maintenance Services",
@@ -6,7 +7,8 @@ const content = {
     image: "https://i.imgur.com/MFm2n85.jpg",
   subServices: [
     {
-        
+        dedicated,
+        shared
     }
   ],
 }
