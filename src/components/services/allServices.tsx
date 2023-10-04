@@ -69,9 +69,6 @@ const Service = ({
         <p className="text-sky-950 text-base9 mt-5">{content}</p>
         {subServices && <SubServices subServices={subServices} />}
         {points && <Points points={points} />}
-        <button className="text-sky-700 text-lg font-semibold w-fit rounded-lg mt-auto">
-          Know more
-        </button>
       </div>
       <div className="w-[45%]">
         <img src="/static/images/services/service1.png" />
