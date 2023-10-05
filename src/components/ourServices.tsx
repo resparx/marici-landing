@@ -68,21 +68,6 @@ const OurServices = () => {
           title="Integration and Analytic Services"
           content="The first business platform to bring together all of your products from one place."
         />
-        <ServiceItem
-        icon={<Gear className="fill-white h-8" />}
-          title="Testing Services"
-          content="End to End Business Platform, Sales Management, Marketing Automation, Help Desk"
-        />
-         <ServiceItem
-        icon={<Gear className="fill-white h-8" />}
-          title="Application Development & Extension Services"
-          content="End to End Business Platform, Sales Management, Marketing Automation, Help Desk"
-        />
-         <ServiceItem
-        icon={<Gear className="fill-white h-8" />}
-          title="Staffing Services"
-          content="End to End Business Platform, Sales Management, Marketing Automation, Help Desk"
-        />
       </div>
     </section>
   );

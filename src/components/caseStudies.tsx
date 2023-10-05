@@ -20,7 +20,7 @@ export const CaseStudy = ({
 
 const CaseStudies = () => {
   return (
-    <section className="bg-slate-800 w-full px-32 py-28 flex flex-col gap-16">
+    <section className="w-full px-52 py-28 flex flex-col gap-16">
       <div className="flex flex-col gap-4 w-1/2">
         <SectionPill title="Case studies" />
         <p className="text-5xl font-bold text-white">
