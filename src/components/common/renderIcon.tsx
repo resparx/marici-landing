@@ -28,6 +28,7 @@ const RenderIcon = ({
   ...rest
 }: {
   type?: string;
+  height?: number | string;
   className?: string;
 }) => {
   switch (type) {

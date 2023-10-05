@@ -7,11 +7,11 @@ import { useParams } from "next/navigation";
 import { ReactNode } from "react";
 import SubServices from "./subServices";
 
-const Points = ({ points }) => {
+const Points = ({ points }: any) => {
   const renderPoints = points.length > 3 ? points.slice(0, 3) : points;
   return (
     <div>
-      {renderPoints.map((point, index) => {
+      {renderPoints.map((point: any, index: number) => {
         return (
           <div key={`point-${index}`} className="flex">
             <div>
@@ -31,22 +31,12 @@ const Points = ({ points }) => {
 const Service = ({
   title,
   content,
-  imgSrc,
   iconType,
   iconProps = {},
   reverse,
   points,
   subServices,
-}: {
-  title: string;
-  content: string;
-  imgSrc: string;
-  iconType: string;
-  iconProps?: {};
-  reverse: boolean;
-  points: any;
-  subServices: any;
-}): ReactNode => {
+}: any): ReactNode => {
   const baseIconProps = {
     className: "h-6 w-6 fill-sky-700",
     ...iconProps,

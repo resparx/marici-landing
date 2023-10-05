@@ -47,6 +47,7 @@ const ExpertiseTypeA = ({
 }: {
   reverse?: boolean;
   img: string;
+  points: any
 }) => {
   return (
     <div

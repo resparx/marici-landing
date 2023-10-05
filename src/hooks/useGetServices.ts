@@ -9,6 +9,7 @@ type Services = {
   title: string;
   image: string;
   subTitle: string;
+  content: string;
   subServices: {
     title: string;
     imgSrc: string;
@@ -22,8 +23,9 @@ const useGetServices = (
   serviceType: string,
   deps: unknown[] = []
 ): Services => {
-  const [services, setServices] = useState<Services>({
+  const [services, setServices] = useState<Services | any>({
     title: "",
+    content: "",
     subTitle: "",
     subServices: [],
     image: "",

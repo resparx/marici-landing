@@ -15,12 +15,12 @@ const Pill = ({ title }: { title: string }) => {
 
 const Point = ({
   iconProps = {
-    height: 32  ,
+    height: 32,
     className: "mt-1",
   },
   title,
   content,
-}) => {
+}: any) => {
   return (
     <div className={"w-[30%] flex gap-4 items-start"}>
       <RenderIcon {...iconProps} />
@@ -32,14 +32,7 @@ const Point = ({
   );
 };
 
-const DetailsType = ({
-  reverse,
-  name,
-  subContent,
-  points = [],
-}: {
-  reverse?: boolean;
-}) => {
+const DetailsType = ({ reverse, name, subContent, points = [] }: any) => {
   return (
     <div className="flex w-3/4 mx-auto gap-16 flex-col">
       <div
@@ -60,10 +53,10 @@ const DetailsType = ({
         </div>
       </div>
       <div className="flex gap-12 flex-wrap">
-          {points.map((item, index) => (
-            <Point {...item} key={`point-${index}`} />
-          ))}
-        </div>
+        {points.map((item: any, index: number) => (
+          <Point {...item} key={`point-${index}`} />
+        ))}
+      </div>
     </div>
   );
 };
@@ -74,7 +67,11 @@ const Details = () => {
   return (
     <div className="flex flex-col mt-24 gap-40">
       {subServices.map((items, index) => (
-        <DetailsType {...items} key={`service-${index}`} reverse={index % 2 != 0} />
+        <DetailsType
+          {...items}
+          key={`service-${index}`}
+          reverse={index % 2 != 0}
+        />
       ))}
     </div>
   );

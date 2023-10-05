@@ -27,7 +27,7 @@ const Service = ({
   );
 };
 
-const SubServices = ({ subServices }) => {
+const SubServices = ({ subServices }: any) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -38,8 +38,8 @@ const SubServices = ({ subServices }) => {
       };
   return (
     <Slider {...settings}>
-      {subServices.map((service, index) => (
-        <Service {...service} />
+      {subServices.map((service: any, index: number) => (
+        <Service key={`subservice-${index}`} {...service} />
       ))}
     </Slider>
   );
