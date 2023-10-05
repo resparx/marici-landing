@@ -86,7 +86,7 @@ const ImageItem2 = ({ imgSrc, heading, content, theme }: any) => {
         </button>
       </div>
       <div className="flex justify-center">
-        <img className="w-[70%]" src="/static/images/landing/landing.png" />
+        <img className="w-[55%]" src="/static/images/landing/landing.png" />
       </div>
     </div>
   );
@@ -103,7 +103,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="h-screen w-screen">
+    <section className="w-screen">
       <Slider {...settings}>
         {/* <ImageItem
           theme="DARK"

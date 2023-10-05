@@ -23,7 +23,7 @@ const CaseStudies = () => {
     <section className="w-full px-52 py-28 flex flex-col gap-16">
       <div className="flex flex-col gap-4 w-1/2">
         <SectionPill title="Case studies" />
-        <p className="text-5xl font-bold text-white">
+        <p className="text-5xl font-bold text-slate-900">
           Gain more insight into how people use your
         </p>
         <p className="text-xl font-medium text-gray-500 mt-2">

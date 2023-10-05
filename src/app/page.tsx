@@ -15,8 +15,8 @@ export default function Home() {
         <Navbar />
         <Banner/>
         <OurServices />
-        <CTA />
         <Expertise />
+        <CTA />
         <CaseStudies />
         <OurPartners />
         <Social />

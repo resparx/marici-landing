@@ -1,11 +1,16 @@
 import ArrowRight from "@/icons/arrow-right";
 import BarsStaggered from "@/icons/bars-staggered";
+import Bolt from "@/icons/bolt";
+import BugSlash from "@/icons/bugSlash";
 import Chip from "@/icons/chip";
 import Cloud from "@/icons/cloud";
 import Cube from "@/icons/cube";
 import Email from "@/icons/email";
 import FileContract from "@/icons/file-contract";
+import Globe from "@/icons/globe";
 import HandPointUp from "@/icons/hand-poit-up";
+import HandShake from "@/icons/handShake";
+import Heart from "@/icons/heart";
 import Internet from "@/icons/internet";
 import ListCheck from "@/icons/list-check";
 import Paint from "@/icons/paint";
@@ -16,13 +21,14 @@ import Selenium from "@/icons/selenium";
 import ShareNodes from "@/icons/share-nodes";
 import Stamp from "@/icons/stamp";
 import Tosca from "@/icons/tosca";
+import Vest from "@/icons/vest";
 
 const RenderIcon = ({
   type,
   ...rest
 }: {
   type?: string;
-  className: string;
+  className?: string;
 }) => {
   switch (type) {
     case "PHONE":
@@ -33,6 +39,12 @@ const RenderIcon = ({
       return <Internet {...rest} />;
     case "CHIP":
       return <Chip {...rest} />;
+    case "HEART":
+      return <Heart {...rest} />;
+    case "GLOBE":
+      return <Globe {...rest} />;
+    case "HAND_SHAKE":
+      return <HandShake {...rest} />;
     case "LIST_CHECKED":
       return <ListCheck {...rest} />;
     case "HAND_POINT_UP":
@@ -59,6 +71,12 @@ const RenderIcon = ({
       return <Right {...rest} />;
     case "ARROW_RIGHT":
       return <ArrowRight {...rest} />;
+    case "VEST":
+      return <Vest {...rest} />;
+    case "BUG_SLASH":
+      return <BugSlash {...rest} />;
+    case "BOLT":
+      return <Bolt {...rest} />;
     default:
       return <BarsStaggered {...rest} />;
   }
