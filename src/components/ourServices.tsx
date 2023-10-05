@@ -41,17 +41,27 @@ const ServiceItem = ({
   );
 };
 
-const NextArrow = ({className, ...rest}: any) => {
-  return <div className={` bg-slate-800 p-4 rounded-md mt-5 absolute top-[100%] right-0`} {...rest}>
-     <ArrowRight className="fill-white h-4" />
-  </div>
-}
+const NextArrow = ({ className, ...rest }: any) => {
+  return (
+    <div
+      className={` bg-slate-800 p-4 rounded-md mt-5 absolute top-[100%] right-0`}
+      {...rest}
+    >
+      <ArrowRight className="fill-white h-4" />
+    </div>
+  );
+};
 
-const PrevArrow = ({className, ...rest}: any) => {
-  return <div className={`bg-slate-800 p-4 rounded-md mt-5 absolute top-[100%] right-20`} {...rest}>
-     <ArrowLeft className="fill-white h-4" />
-  </div>
-}
+const PrevArrow = ({ className, ...rest }: any) => {
+  return (
+    <div
+      className={`bg-slate-800 p-4 rounded-md mt-5 absolute top-[100%] right-20`}
+      {...rest}
+    >
+      <ArrowLeft className="fill-white h-4" />
+    </div>
+  );
+};
 
 const OurServices = () => {
   const sliderSettings = {
@@ -61,7 +71,7 @@ const OurServices = () => {
     slidesToScroll: 3,
     variableWidth: true,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
   };
   return (
     <section className="p-24 px-52 flex flex-col gap-12 bg-white w-full mt-[120px]">

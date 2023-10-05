@@ -41,9 +41,8 @@ const Service = ({
     className: "h-6 w-6 fill-sky-700",
     ...iconProps,
   };
-  console.log(subServices, points);
   return (
-      <div
+    <div
       className={classNames(
         "flex w-[100%] justify-between transition-all mb-40",
         {
@@ -52,11 +51,11 @@ const Service = ({
       )}
     >
       <div className="flex flex-col w-[45%] gap-4">
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center pl-4">
           <RenderIcon type={iconType} {...baseIconProps} />
           <p className="text-sky-950 font-semibold text-xl">{title}</p>
         </div>
-        <p className="text-sky-950 text-base9 mt-5">{content}</p>
+        <p className="text-sky-950 text-base9 mt-5 pl-4">{content}</p>
         {subServices && <SubServices subServices={subServices} />}
         {points && <Points points={points} />}
       </div>
