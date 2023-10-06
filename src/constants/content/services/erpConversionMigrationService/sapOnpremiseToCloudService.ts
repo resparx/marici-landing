@@ -1,5 +1,6 @@
 const content = {
     title: "SAP On-Premise to Cloud Migration Service ",
+    imgSrc: "/static/images/services/implementation/erp.png",
     content: "Our SAP On-Premise to Cloud Migration Service is a comprehensive solution tailored to your company's needs. It involves the strategic planning, execution, and management of migrating your existing SAP systems and data from on-premises infrastructure to cloud-based environments. This service is designed to help you leverage the scalability, flexibility, and cost-efficiency of cloud computing while ensuring data integrity, security, and business continuity.",
     points: [
         {

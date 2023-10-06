@@ -37,16 +37,20 @@ const useGetServices = (
         break;
       case "upgrade-migration-services":
         setServices(erpCoversionMigrationContent);
+        break;
       case "support-maintenance-services":
         setServices(supportMaintenanceServices);
+        break;
       case "application-development-frontend-services":
         setServices(applicationContent);
+        break;
       default: {
         setServices({
           title: "",
           image: "",
           subServices: [],
         });
+        break;
       }
     }
   }, [serviceType, ...deps]);

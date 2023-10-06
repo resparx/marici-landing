@@ -22,7 +22,7 @@ const SubNav = ({ heading, items }: any) => {
 
 const Navbar = () => {
   return (
-    <div className="w-full h-20 flex justify-between px-32 fixed bg-white items-center z-10">
+    <div className="w-full h-20 flex justify-between px-52 fixed bg-white items-center z-10">
       <div>
         <img className="w-44" src="/static/images/mahrashi_dark.png" />
       </div>

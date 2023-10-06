@@ -1,5 +1,6 @@
 const content = {
   title: "SAP On-Premise Upgrade/Conversion Services",
+  imgSrc: "/static/images/services/implementation/erp.png",
   content:
     "SAP On-Premise Upgrade/Conversion Services refer to a suite of solutions and processes designed to help organizations using SAP software update and transform their existing on-premises SAP systems to a newer version or to a different SAP product. This service encompasses various activities and considerations, including",
   points: [
