@@ -86,7 +86,7 @@ const ImageItem2 = ({ imgSrc, heading, content, theme }: any) => {
         </button>
       </div>
       <div className="flex justify-center">
-        <img className="w-[55%]" src="/static/images/landing/landing.png" />
+        <img className="w-[55%]" src={imgSrc} />
       </div>
     </div>
   );
@@ -94,7 +94,6 @@ const ImageItem2 = ({ imgSrc, heading, content, theme }: any) => {
 
 const Banner = () => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -113,8 +112,32 @@ const Banner = () => {
         /> */}
         <ImageItem2
           theme="DARK"
-          imgSrc="/static/images/banner2.jpg"
+          imgSrc="/static/images/landing/banner_sap-hybris.png"
           heading="SAP Hybris"
+          content="Understand your customers better and provide them with seamless & personalized products & services"
+        />
+        <ImageItem2
+          theme="DARK"
+          imgSrc="/static/images/landing/banner_digital-transformation.png"
+          heading="Digital Transformation for Retail"
+          content="Understand your customers better and provide them with seamless & personalized products & services"
+        />
+        <ImageItem2
+          theme="DARK"
+          imgSrc="/static/images/landing/banner_sap-s4.png"
+          heading="S/4 HANA"
+          content="Understand your customers better and provide them with seamless & personalized products & services"
+        />
+        <ImageItem2
+          theme="DARK"
+          imgSrc="/static/images/landing/banner_sap-successfactors.png"
+          heading="SAP SuccessFactors"
+          content="Understand your customers better and provide them with seamless & personalized products & services"
+        />
+        <ImageItem2
+          theme="DARK"
+          imgSrc="/static/images/landing/banner_sap-master-data-management.png"
+          heading="Master Data Management"
           content="Understand your customers better and provide them with seamless & personalized products & services"
         />
       </Slider>

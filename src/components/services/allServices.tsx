@@ -36,6 +36,7 @@ const Service = ({
   reverse,
   points,
   subServices,
+  imgSrc
 }: any): ReactNode => {
   const baseIconProps = {
     className: "h-6 w-6 fill-sky-700",
@@ -60,7 +61,7 @@ const Service = ({
         {points && <Points points={points} />}
       </div>
       <div className="w-[45%]">
-        <img src="/static/images/services/service1.png" />
+        <img src={imgSrc} />
       </div>
     </div>
   );
