@@ -6,21 +6,23 @@ import classNames from "classnames";
 import { useParams } from "next/navigation";
 import { ReactNode } from "react";
 import SubServices from "./subServices";
+import Link from "next/link";
 
 const Points = ({ points }: any) => {
   const renderPoints = points.length > 3 ? points.slice(0, 3) : points;
   return (
-    <div>
+    <div className="mt-4 pl-4 flex flex-col gap-8">
       {renderPoints.map((point: any, index: number) => {
         return (
-          <div key={`point-${index}`} className="flex">
-            <div>
+          <div
+            key={`point-${index}`}
+            className="flex flex-col items-start gap-4"
+          >
+            <div className="flex items-center gap-4">
               <RenderIcon />
+              <p className="text-slate-900 font-semibold">{point.title}</p>
             </div>
-            <div>
-              <p>{point.title}</p>
-              <p>{point.content}</p>
-            </div>
+            <p className="text-slate-900">{point.content}</p>
           </div>
         );
       })}
@@ -36,7 +38,7 @@ const Service = ({
   reverse,
   points,
   subServices,
-  imgSrc
+  imgSrc,
 }: any): ReactNode => {
   const baseIconProps = {
     className: "h-6 w-6 fill-sky-700",
@@ -56,7 +58,8 @@ const Service = ({
           <RenderIcon type={iconType} {...baseIconProps} />
           <p className="text-sky-950 font-semibold text-xl">{title}</p>
         </div>
-        <p className="text-sky-950 text-base9 mt-5 pl-4">{content}</p>
+        <p className="text-sky-950 text-base mt-5 pl-4">{content}</p>
+        <Link className="pl-4 text-slate-900" href="">Learn more</Link>
         {subServices && <SubServices subServices={subServices} />}
         {points && <Points points={points} />}
       </div>
@@ -70,6 +73,7 @@ const Service = ({
 const AllServices = () => {
   const { service } = useParams();
   const { subServices } = useGetServices(service.toString());
+  console.log(subServices, "subServices");
   return (
     <section className="flex flex-wrap mx-auto w-full px-52 gap-16">
       {subServices.map((item, index: number) => {
