@@ -23,7 +23,7 @@ const ServiceItem = ({
   content: string;
 }) => {
   return (
-    <div className="flex flex-col gap-4 w-[400px] rounded-xl bg-slate-800 shadow-xl p-8 mr-8 mt-8">
+    <div className="flex flex-col gap-4 w-full sm:w-[400px] rounded-xl bg-slate-800 shadow-xl p-8 mr-8 mt-8">
       <div className="flex justify-start">
         <div className="rounded-full bg-sky-600 p-4">{icon}</div>
       </div>
@@ -74,21 +74,21 @@ const OurServices = () => {
     prevArrow: <PrevArrow />,
   };
   return (
-    <section className="p-24 px-52 flex flex-col gap-12 bg-white w-full mt-[120px]">
-      <div className="flex items-end gap-4">
-        <div className="flex flex-col w-[40%] gap-6">
+    <section className="sm:pt-24 px-4 sm:px-52 flex flex-col gap-4 sm:gap-12 bg-white w-full mt-[60px] sm:mt-[120px]">
+      <div className="block sm:flex items-end gap-4">
+        <div className="flex flex-col w-full sm:w-[40%] gap-6 mb-4 sm:m-0">
           <SectionPill title="Our Services" />
-          <p className="text-gray-900 text-5xl font-bold">
+          <p className="text-gray-900 text-2xl sm:text-5xl font-bold">
             Gain more insight into how people use your
           </p>
         </div>
-        <p className="text-gray-500 text-xl font-medium w-2/5">
+        <p className="text-gray-500 text-base sm:text-xl font-medium w-full sm:w-2/5">
           With our integrated CRM, project management, collaboration and
           invoicing capabilities, you can manage every aspect of your business
           in one secure platform.
         </p>
       </div>
-      <div className="w-full">
+      <div className="hidden sm:block w-full">
         <Slider {...sliderSettings}>
           <ServiceItem
             icon={<Bolt className="fill-white h-6" />}
@@ -116,6 +116,33 @@ const OurServices = () => {
             content="The first business platform to bring together all of your products from one place."
           />
         </Slider>
+      </div>
+      <div className="flex flex-col sm:hidden">
+        <ServiceItem
+          icon={<Bolt className="fill-white h-6" />}
+          title="Digital transformation and Consulting Services"
+          content="Our consulting services empower your organization to navigate the digital landscape, optimize operations, and enhance customer experiences. Unlock your digital potential with Marici"
+        />
+        <ServiceItem
+          icon={<Chart className="fill-white h-6" />}
+          title="Implementation and Rollout Services"
+          content="Get a complete sales dashboard in the cloud. See activity, revenue and social metrics all in one place."
+        />
+        <ServiceItem
+          icon={<People className="fill-white h-6" />}
+          title="Conversion and Migration Services"
+          content="Our calendar lets you know what is happening with customer and projects so you"
+        />
+        <ServiceItem
+          icon={<Chip className="fill-white h-6" />}
+          title="Application Management Services"
+          content="A tool that lets you build a dream website even if you know nothing about web design or programming."
+        />
+        <ServiceItem
+          icon={<Phone className="fill-white h-6" />}
+          title="Integration and Analytic Services"
+          content="The first business platform to bring together all of your products from one place."
+        />
       </div>
     </section>
   );

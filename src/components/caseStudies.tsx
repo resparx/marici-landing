@@ -10,7 +10,7 @@ export const CaseStudy = ({
   content: string;
 }) => {
   return (
-    <div className="flex flex-col gap-4 w-1/4 mb-24">
+    <div className="flex flex-col gap-4 w-full sm:w-1/4 sm:mb-24">
       <img className="rounded-xl" src={img} />
       <p className="text-xl font-bold text-white">{title}</p>
       <p className="text-base font-medium text-gray-500" >{content}</p>
@@ -20,13 +20,13 @@ export const CaseStudy = ({
 
 const CaseStudies = () => {
   return (
-    <section className="w-full px-52 py-28 flex flex-col gap-16">
-      <div className="flex flex-col gap-4 w-1/2">
+    <section className="w-full px-4 sm:px-52 py-8 sm:pt-28 flex flex-col gap-16">
+      <div className="flex flex-col gap-2 sm:gap-4 w-full sm:w-1/2">
         <SectionPill title="Case studies" />
-        <p className="text-5xl font-bold text-slate-900">
+        <p className="text-2xl sm:text-5xl font-bold text-slate-900">
           Gain more insight into how people use your
         </p>
-        <p className="text-xl font-medium text-gray-500 mt-2">
+        <p className="text-base sm:text-xl font-medium text-gray-500 mt-2">
           With our integrated CRM, project management, collaboration and
           invoicing capabilities, you can manage your business in one secure
           platform.

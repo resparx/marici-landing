@@ -1,6 +1,6 @@
 const SectionPill = ({ title }: { title: string }) => {
   return (
-    <p className="text-sky-800 px-4 py-2 rounded-3xl bg-sky-300 font-semibold w-fit">
+    <p className="text-sky-800 text-xs sm:text-base px-4 py-2 rounded-3xl bg-sky-300 font-semibold w-fit">
       {title}
     </p>
   );

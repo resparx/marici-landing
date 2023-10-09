@@ -8,9 +8,9 @@ import classNames from "classnames";
 
 const ImageItem = ({ imgSrc, heading, content, theme }: any) => {
   return (
-    <div className="flex flex-col items-center w-full pt-40 ">
-      <h1 className="text-6xl text-slate-900 font-semibold mb-4">{heading}</h1>
-      <p className=" w-1/3 text-center text-lg text-slate-600 font-normal mb-4">
+    <div className="flex flex-col items-center w-full pt-32 sm:pt-40 ">
+      <h1 className="text-center text-2xl sm:text-6xl text-slate-900 font-semibold mb-4">{heading}</h1>
+      <p className="sm:w-1/3 text-center text-sm sm:text-lg text-slate-600 font-normal mb-4">
         {content}
       </p>
       <div className="flex gap-4 mb-10">
@@ -63,7 +63,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="w-screen">
+    <section className="w-screen h-[65vh] sm:h-auto">
       <Slider {...settings}>
         <ImageItem
           theme="DARK"
