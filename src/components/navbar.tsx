@@ -26,6 +26,7 @@ const Navbar = () => {
       <div>
         <img className="w-44" src="/static/images/mahrashi_dark.png" />
       </div>
+      <a>
       <ul className="flex gap-12 align-middle h-20">
         <li>
           <Link className="text-slate-800 h-full" href="/">
@@ -66,7 +67,6 @@ const Navbar = () => {
           <Link className="text-slate-800" href="/case-studies">
             <p className="font-medium">
               Case studies
-              {/* <Down className="inline ml-1" /> */}
             </p>
           </Link>
         </li>
@@ -74,7 +74,6 @@ const Navbar = () => {
           <Link className="text-slate-800" href="/about-us">
             <p className="font-medium">
               About us
-              {/* <Down className="inline ml-1" /> */}
             </p>
           </Link>
         </li>
@@ -82,11 +81,11 @@ const Navbar = () => {
           <Link className="text-slate-800" href="/contact-us">
             <p className="font-medium">
               Contact us
-              {/* <Down className="inline ml-1" /> */}
             </p>
           </Link>
         </li>
       </ul>
+      </a>
       <div className="flex items-center">
         <Linkedin fill="#146ebe" height={32} />
         <img className="h-10" src="/static/images/sap-silver.png" />
