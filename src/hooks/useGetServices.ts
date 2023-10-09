@@ -4,6 +4,7 @@ import implementationContent from "../constants/content/services/implementationC
 import erpCoversionMigrationContent from "../constants/content/services/erpConversionMigrationService"
 import supportMaintenanceServices from "../constants/content/services/ERP-CRMSupportMaintenanceServices"
 import applicationContent from "../constants/content/services/applicationDevelopmentFrontendServices "
+import staffingContent from "../constants/content/services/staffingServices"
 
 type Services = {
   title: string;
@@ -43,6 +44,9 @@ const useGetServices = (
         break;
       case "application-development-frontend-services":
         setServices(applicationContent);
+        break;
+      case "staffing-services":
+        setServices(staffingContent);
         break;
       default: {
         setServices({

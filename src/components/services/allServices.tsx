@@ -73,10 +73,9 @@ const Service = ({
 const AllServices = () => {
   const { service } = useParams();
   const { subServices } = useGetServices(service.toString());
-  console.log(subServices, "subServices");
   return (
     <section className="flex flex-wrap mx-auto w-full px-52 gap-16">
-      {subServices.map((item, index: number) => {
+      {subServices?.map((item, index: number) => {
         return (
           <Service
             reverse={index % 2 !== 0}
