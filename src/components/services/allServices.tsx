@@ -47,13 +47,14 @@ const Service = ({
   return (
     <div
       className={classNames(
-        "flex w-[100%] justify-between transition-all mb-40",
+        "flex flex-col w-[100%] justify-between transition-all mb-40 gap-10 sm:gap-0",
         {
-          "flex-row-reverse": reverse,
+          "sm:flex-row-reverse": reverse,
+          "sm:flex-row": !reverse
         }
       )}
     >
-      <div className="flex flex-col w-[45%] gap-4">
+      <div className="flex flex-col w-full sm:w-[45%] gap-4">
         <div className="flex gap-4 items-center pl-4">
           <RenderIcon type={iconType} {...baseIconProps} />
           <p className="text-sky-950 font-semibold text-xl">{title}</p>
@@ -63,7 +64,7 @@ const Service = ({
         {subServices && <SubServices subServices={subServices} />}
         {points && <Points points={points} />}
       </div>
-      <div className="w-[45%]">
+      <div className="w-full sm:w-[45%]">
         <img src={imgSrc} />
       </div>
     </div>
@@ -74,7 +75,7 @@ const AllServices = () => {
   const { service } = useParams();
   const { subServices } = useGetServices(service.toString());
   return (
-    <section className="flex flex-wrap mx-auto w-full px-52 gap-16">
+    <section className="flex flex-wrap mx-auto w-full px-4 sm:px-52 gap-16">
       {subServices?.map((item, index: number) => {
         return (
           <Service
