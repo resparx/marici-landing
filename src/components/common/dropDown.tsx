@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const Dropdown = ({ color, children, menu = [] }: any) => {
   const [dropdownPopoverShow, setDropdownPopoverShow] = useState(false);
-  const btnDropdownRef = useRef();
-  const popoverDropdownRef = useRef();
+  const btnDropdownRef = useRef<any>();
+  const popoverDropdownRef = useRef<any>();
   const openDropdownPopover = () => {
-    new Popper(btnDropdownRef?.current, popoverDropdownRef.current);
-    setDropdownPopoverShow(true);
+    // new Popper(btnDropdownRef.current, popoverDropdownRef.current);
+    // setDropdownPopoverShow(true);
   };
   const closeDropdownPopover = () => {
     setDropdownPopoverShow(false);
@@ -25,7 +25,6 @@ const Dropdown = ({ color, children, menu = [] }: any) => {
         <div className="relative inline-flex align-middle w-full">
           <div
             style={{ transition: "all .15s ease" }}
-            type="button"
             ref={btnDropdownRef}
             onClick={() => {
               dropdownPopoverShow
@@ -54,7 +53,7 @@ const Dropdown = ({ color, children, menu = [] }: any) => {
             >
               Action
             </Link>
-            {menu.filter(item => !item.separated).map((item, index) => <Link
+            {menu.filter((item: any) => !item.separated).map((item: any, index: number) => <Link
             key={`nav-unseparated-${index}`}
               {...menu}
               className={
@@ -64,7 +63,7 @@ const Dropdown = ({ color, children, menu = [] }: any) => {
             >
               Action
             </Link>)}
-            {menu.filter(item => !item.separated).map((item, index) => <Link
+            {menu.filter((item: any) => !item.separated).map((item: any, index: number) => <Link
                 key={`nav-separated-${index}`}
               {...menu}
               className={
