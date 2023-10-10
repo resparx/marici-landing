@@ -59,7 +59,8 @@ const Banner = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoPlaySpeed: 1000
+    autoPlaySpeed: 1000,
+    dots: false
   };
 
   return (

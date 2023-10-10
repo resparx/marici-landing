@@ -1,14 +1,14 @@
-import {useRef, useState} from "react";
+"use client";
+import { useRef, useState } from "react";
 import Popper from "popper.js";
+import Link from "next/link";
 
-const Dropdown = ({ color, children }) => {
+const Dropdown = ({ color, children, menu = [] }: any) => {
   const [dropdownPopoverShow, setDropdownPopoverShow] = useState(false);
   const btnDropdownRef = useRef();
   const popoverDropdownRef = useRef();
   const openDropdownPopover = () => {
-    new Popper(btnDropdownRef?.current, popoverDropdownRef.current, {
-      placement: "bottom-start"
-    });
+    new Popper(btnDropdownRef?.current, popoverDropdownRef.current);
     setDropdownPopoverShow(true);
   };
   const closeDropdownPopover = () => {
@@ -20,57 +20,66 @@ const Dropdown = ({ color, children }) => {
     ? (bgColor = "bg-gray-800")
     : (bgColor = "bg-" + color + "-500");
   return (
-    <>
-      <div className="flex flex-wrap">
-        <div className="w-full sm:w-6/12 md:w-4/12 px-4">
-          <div className="relative inline-flex align-middle w-full">
-            <div
-              style={{ transition: "all .15s ease" }}
-              type="button"
-              ref={btnDropdownRef}
-              onClick={() => {
-                dropdownPopoverShow
-                  ? closeDropdownPopover()
-                  : openDropdownPopover();
-              }}
-            >
-              {children}
-            </div>
-            <div
-              ref={popoverDropdownRef}
+    <div className="flex flex-wrap">
+      <div className="w-full sm:w-6/12 md:w-4/12 px-4">
+        <div className="relative inline-flex align-middle w-full">
+          <div
+            style={{ transition: "all .15s ease" }}
+            type="button"
+            ref={btnDropdownRef}
+            onClick={() => {
+              dropdownPopoverShow
+                ? closeDropdownPopover()
+                : openDropdownPopover();
+            }}
+          >
+            {children}
+          </div>
+          <div
+            ref={popoverDropdownRef}
+            className={
+              (dropdownPopoverShow ? "block " : "hidden ") +
+              (color === "white" ? "bg-white " : bgColor + " ") +
+              "text-base z-50 float-right py-2 list-none text-left rounded shadow-lg mt-1"
+            }
+            style={{ minWidth: "12rem", right: 0, left: "-200px !important"}}
+          >
+            <Link
+              href="#pablo"
               className={
-                (dropdownPopoverShow ? "block " : "hidden ") +
-                (color === "white" ? "bg-white " : bgColor + " ") +
-                "text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
+                "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
+                (color === "white" ? " text-gray-800" : "text-white")
               }
-              style={{ minWidth: "12rem" }}
+              onClick={(e) => e.preventDefault()}
             >
-              <a
-                href="#pablo"
-                className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
-                  (color === "white" ? " text-gray-800" : "text-white")
-                }
-                onClick={e => e.preventDefault()}
-              >
-                Action
-              </a>
-              <a
-                href="#pablo"
-                className={
-                  "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
-                  (color === "white" ? " text-gray-800" : "text-white")
-                }
-                onClick={e => e.preventDefault()}
-              >
-                Seprated link
-              </a>
-            </div>
+              Action
+            </Link>
+            {menu.filter(item => !item.separated).map((item, index) => <Link
+            key={`nav-unseparated-${index}`}
+              {...menu}
+              className={
+                "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
+                menu.className
+              }
+            >
+              Action
+            </Link>)}
+            {menu.filter(item => !item.separated).map((item, index) => <Link
+                key={`nav-separated-${index}`}
+              {...menu}
+              className={
+                "text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent " +
+                menu.className
+              }
+            >
+              Seprated link
+            </Link>)}
+            
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Dropdown
+export default Dropdown;

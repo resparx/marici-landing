@@ -2,6 +2,8 @@ import Down from "@/icons/down";
 import Linkedin from "@/icons/linkedin";
 import Link from "next/link";
 import classNames from "classnames";
+import Dropdown from "./common/dropDown";
+import Menu from "@/icons/menu";
 
 const SubNav = ({ heading, items }: any) => {
   return (
@@ -23,14 +25,15 @@ const SubNav = ({ heading, items }: any) => {
 const Navbar = () => {
   return (
     <div className="w-full h-20 flex justify-between px-4 sm:px-52 fixed bg-white items-center z-10">
-      <Link href="/">
+      <Link href="/" className="w-[40%] sm:w-44" >
         <img
-          className="w-[40%] sm:w-44"
           src="/static/images/mahrashi_dark.png"
         />
       </Link>
-      
-      <a>
+      {/* <Dropdown> */}
+        <Menu className="sm:hidden" />
+      {/* </Dropdown> */}
+      <a className="hidden sm:block">
         <ul className="hidden sm:flex gap-12 align-middle h-20">
           <li>
             <Link className="text-slate-800 h-full" href="/">
