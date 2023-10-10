@@ -81,7 +81,7 @@ const Map = () => {
   }, []);
 
   return (
-    <div ref={mapContainerRef} className="h-[520px] rounded-lg overflow-hidden">
+    <div ref={mapContainerRef} className="h-[320px] rounded-lg overflow-hidden">
     </div>
   );
 };

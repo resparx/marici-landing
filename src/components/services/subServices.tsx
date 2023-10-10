@@ -63,11 +63,18 @@ const SubServices = ({ subServices }: any) => {
   };
   return (
     <div className="w-60%">
+      <div className="hidden sm:block">
       <Slider {...settings}>
         {subServices.map((service: any, index: number) => (
           <Service key={`subservice-${index}`} {...service} />
         ))}
       </Slider>
+      </div>
+      <div className="sm:hidden flex flex-col">
+      {subServices.map((service: any, index: number) => (
+          <Service key={`subservice-${index}`} {...service} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const Mode = ({
   return (
     <div className="flex flex-col gap-2">
       <p className="text-lg text-gray-700 font-semibold">{heading}</p>
-      <p className="text-base text-gray-700 w-[80%]">{content}</p>
+      <p className="text-base text-gray-700 w-full sm:w-[80%]">{content}</p>
       <div className="flex gap-3 items-center">
         <RenderIcon className="fill-sky-600" type={iconType} />{" "}
         <Link className="text-sky-600 font-semibold" href={href}>
@@ -33,10 +33,10 @@ const Banner = () => {
   const inputClasses =
     "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white h-14 w-full";
   return (
-    <div className="flex flex-col bg-white pt-40 px-48 justify-between">
-      <p className="text-5xl font-semibold text-gray-700 mb-20">Get in touch</p>
-      <div className="flex justify-between">
-        <div className="flex flex-col w-[50%]">
+    <div className="flex flex-col bg-white pt-40 px-4 sm:px-52 justify-between">
+      <p className="text-5xl font-semibold text-gray-700 mb-12 sm:mb-20">Get in touch</p>
+      <div className="flex flex-col sm:flex-row justify-between">
+        <div className="flex flex-col w-full sm:w-[50%] mb-20 sm:mb-0">
           <p className="text-lg font-semibold text-gray-700 mb-2">
             Send a message
           </p>
@@ -44,8 +44,8 @@ const Banner = () => {
             Ex nulla sunt cupidatat mollit dolor excepteur sunt sint laboris
             exercitation sint irure.
           </p>
-          <form className="flex flex-col gap-5 w-4/5">
-            <div className="flex gap-5">
+          <form className="flex flex-col gap-5 w-full sm:w-4/5">
+            <div className="flex flex-col sm:flex-row gap-5">
               <div className="w-full">
                 <label
                   htmlFor="first_name"
@@ -75,7 +75,7 @@ const Banner = () => {
                 />
               </div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex flex-col sm:flex-row gap-5">
               <div className="w-full">
                 <label
                   htmlFor="first_name"
@@ -121,7 +121,7 @@ const Banner = () => {
             </button>
           </form>
         </div>
-        <div className="flex flex-col gap-16 w-[50%]">
+        <div className="flex flex-col gap-16 w-full sm:w-[50%]">
           <Mode
             heading="Call us"
             content="Velit elit laborum elit deserunt mollit laboris. laborum elit deserunt mollitVelit elit laborum elit deserunt mollit laboris."

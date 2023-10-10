@@ -2,7 +2,7 @@ import Map from "../common/map";
 
 const MapView = () => {
   return (
-    <div className="w-full p-32">
+    <div className="hidden sm:block w-full p-4 sm:p-32">
       <Map />
     </div>
   );

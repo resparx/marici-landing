@@ -12,7 +12,7 @@ export const CaseStudy = ({
   return (
     <div className="flex flex-col gap-4 w-full sm:w-1/4 sm:mb-24">
       <img className="rounded-xl" src={img} />
-      <p className="text-xl font-bold text-white">{title}</p>
+      <p className="text-xl font-bold text-slate-700">{title}</p>
       <p className="text-base font-medium text-gray-500" >{content}</p>
     </div>
   );

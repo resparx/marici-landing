@@ -4,7 +4,7 @@ import Linkedin from "@/icons/linkedin";
 import Twitter from "@/icons/twitter";
 
 const Li = ({ children }: { children: any }) => {
-  return <li className="text-lg font-normal text-gray-50">{children}</li>;
+  return <li className="text-sm sm:text-lg font-normal text-gray-50">{children}</li>;
 };
 
 const Footer = () => {
@@ -18,14 +18,14 @@ const Footer = () => {
         <Li>Phone: +49 17641848023</Li>
       </ul>
       <ul className="flex flex-col w-40 sm:w-48 gap-1 sm:gap-3 mt-12">
-        <li className="text-2xl font-semibold text-white sm:mb-8 mb-2">About us</li>
+        <li className="text-lg sm:text-2xl font-semibold text-white sm:mb-8 mb-2">About us</li>
         <Li>Who We Are</Li>
         <Li>Why MARICI</Li>
         <Li>Our Value Propositions</Li>
         <Li>How we deliver</Li>
       </ul>
       <ul className="flex flex-col w-40 sm:w-48 gap-1 sm:gap-3 mt-12">
-        <li className="text-2xl font-semibold text-white sm:mb-8 mb-2">Solutions</li>
+        <li className="text-lg sm:text-2xl font-semibold text-white sm:mb-8 mb-2">Solutions</li>
         <Li>Solutions</Li>
         <Li>S/4 HANA</Li>
         <Li>Digital Transformation for Retail</Li>
@@ -35,7 +35,7 @@ const Footer = () => {
         <Li>RPA</Li>
       </ul>
       <ul className="flex flex-col w-40 sm:w-48 gap-1 sm:gap-3 mt-12">
-        <li className="text-2xl font-semibold text-white sm:mb-8 mb-2">Services</li>
+        <li className="text-lg sm:text-2xl font-semibold text-white sm:mb-8 mb-2">Services</li>
         <Li>Consulting</Li>
         <Li>Implementations</Li>
         <Li>AppLication Development</Li>
@@ -43,13 +43,13 @@ const Footer = () => {
         <Li>Training & Support</Li>
       </ul>
       <ul className="flex flex-col w-40 sm:w-48 gap-1 sm:gap-3 mt-12">
-        <li className="text-2xl font-semibold text-white sm:mb-8 mb-2">Address</li>
+        <li className="text-lg sm:text-2xl font-semibold text-white sm:mb-8 mb-2">Address</li>
         <Li>HQ – Germany: Maxfeldstraße 52, 90409 Nürnberg</Li>
         <Li>USA Subsidiary: Maharshi Solutions Inc</Li>
         <Li>1912 Eastchester Dr Suite 108, High Point, North CaroLina</Li>
       </ul>
       <ul className="flex flex-col w-full sm:w-48 gap-1 sm:gap-3 mt-12">
-        <li className="text-2xl font-semibold text-white sm:mb-8 mb-2 text-center sm:text-start">Follow Us</li>
+        <li className="text-lg sm:text-2xl font-semibold text-white sm:mb-8 mb-2 text-center sm:text-start">Follow Us</li>
         <li>
           <div className="flex justify-around sm:justify-start gap-2">
             <Twitter className="h-8 fill-slate-200" />

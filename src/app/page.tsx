@@ -12,7 +12,7 @@ import Social from "@/components/social";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-0 bg-white">
-        {/* <Navbar /> */}
+        <Navbar />
         <Banner/>
         <OurServices />
         <Expertise />
